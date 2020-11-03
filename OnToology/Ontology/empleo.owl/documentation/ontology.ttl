@@ -32,7 +32,7 @@
                                                                                                       "Vocabulary for the representation of data on public employment offer."@en ;
                                                               <http://purl.org/dc/terms/created> "2020-10-14"^^xsd:dateTime ;
                                                               <http://purl.org/dc/terms/hasVersion> "1.0.0" ;
-                                                              <http://purl.org/dc/terms/issued> "2020-12-03"^^xsd:dateTime ;
+                                                              <http://purl.org/dc/terms/issued> "2020-11-03"^^xsd:dateTime ;
                                                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
                                                               <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@en ,
                                                                                                    "Ontology Engineering Group - Universidad Politécnica de Madrid"@es ;

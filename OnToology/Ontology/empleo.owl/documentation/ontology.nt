@@ -22,7 +22,7 @@
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/title> "Vocabulary for the representation of data on public employment offer."@en .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/created> "2020-10-14"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/hasVersion> "1.0.0" .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/issued> "2020-12-03"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/issued> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@en .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@es .

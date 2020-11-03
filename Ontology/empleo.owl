@@ -49,7 +49,7 @@
 	<dct:publisher xml:lang="en">Ontology Engineering Group - Universidad Politécnica de Madrid</dct:publisher>
         <dct:hasVersion>1.0.0</dct:hasVersion>
 	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-14</dct:created>
-        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-03</dct:issued>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-03</dct:issued>
         <dct:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</dct:license>
         <rdfs:comment xml:lang="es">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" de la "II Convocatoria de Ciudades Inteligentes" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</rdfs:comment>
 	<rdfs:comment xml:lang="en">This vocabulary has been developed in the context of the action on open data of the project "Platform of Open, Collaborative and Interoperable Government" of the "II Call for Intelligent Cities" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry.</rdfs:comment>

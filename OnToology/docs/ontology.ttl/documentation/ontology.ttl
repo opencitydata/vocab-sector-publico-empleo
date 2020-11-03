@@ -1,0 +1,749 @@
+@prefix : <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> .
+
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> rdf:type owl:Ontology ;
+                                                              owl:versionIRI <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo/1.0.0> ;
+                                                              <http://purl.org/dc/elements/1.1/abstract> """Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.
+	El vocabulario de Empleo trabaja sobre la base del buscador de convocatorias de empleo público del portal de la administración general https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm"""@es ,
+                                                                                                         """This vocabulary has been developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Business launched through the Public Business Entity Red.es assigned to the State Secretariat for Digital Advancement of that ministry.
+	The Employment vocabulary works on the basis of the search engine for public employment calls of the general administration portal https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm."""@en ;
+                                                              <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
+                                                                                                            "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
+                                                                                                            "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
+                                                                                                            "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ,
+                                                                                                            "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es ,
+                                                                                                            "Red.es"@es ,
+                                                                                                            "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es ,
+                                                                                                            "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ,
+                                                                                                            "Víctor Morlán Pío - Ayuntamiento de Zaragoza"@es ;
+                                                              <http://purl.org/dc/elements/1.1/creator> "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                        "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                        "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ;
+                                                              <http://purl.org/dc/elements/1.1/description> "Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio."@es ,
+                                                                                                            "This vocabulary is being developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry."@en ;
+                                                              <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo"@es ;
+                                                              <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
+                                                              <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre la oferta pública de empleo"@es ,
+                                                                                                      "Vocabulary for the representation of data on public employment offer."@en ;
+                                                              <http://purl.org/dc/terms/created> "2020-10-14"^^xsd:dateTime ;
+                                                              <http://purl.org/dc/terms/hasVersion> "1.0.0" ;
+                                                              <http://purl.org/dc/terms/issued> "2020-11-03"^^xsd:dateTime ;
+                                                              <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                                              <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@en ,
+                                                                                                   "Ontology Engineering Group - Universidad Politécnica de Madrid"@es ;
+                                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "esempleo" ;
+                                                              <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#> ;
+                                                              rdfs:comment "Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio."@es ,
+                                                                           "This vocabulary has been developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry."@en ;
+                                                              owl:versionInfo "This is the initial version of the Employment ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate."@en ,
+                                                                              "Versión 1.0 de la ontología de Empleo que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."@es .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty ;
+                                   rdfs:domain <http://purl.org/dc/terms/creator> .
+
+
+###  http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty ;
+                                  rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/date> .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#specificPropertyOf
+:specificPropertyOf rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#domain
+rdfs:domain rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo
+:cuerpo rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:domain :ConvocatoriaEmpleoPublico ;
+        rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                            owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo>
+                                          ]
+                                        ) ;
+                     rdf:type owl:Class
+                   ] ;
+        rdfs:comment "Cuerpo o escala de la administración pública: general, especial, general o especial, habilitado de carácter nacional, general o habilitado de carácter nacional"@es ,
+                     "Public administration body or scale: general, special, general or special, nationally qualified, general or nationally qualified"@en ;
+        rdfs:label "Body or scale"@en ,
+                   "Cuerpo o escala"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico
+:empleadoPublico rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :ConvocatoriaEmpleoPublico ;
+                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                     owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                 rdfs:comment "Tipo de empleado público: tipo de funcionario y tipo de personal laboral"@es ,
+                              "Type of public employee: type of civil servant: subtype of civil servant and subtype of labour force"@en ;
+                 rdfs:label "Empleado Público"@es ,
+                            "Public employee"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional
+:grupoProfesional rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :ConvocatoriaEmpleoPublico ;
+                  rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                      owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional>
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+                  rdfs:comment "Grupo profesional: A, B, C o E"@es ,
+                               "Professional group: A, B, C or E"@en ;
+                  rdfs:label "Grupo profesional"@es ,
+                             "Professional group"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad
+:modalidad rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :ConvocatoriaEmpleoPublico ;
+           rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                               owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad>
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
+           rdfs:comment "Method of announcement: Competition, Contest or Competition-Public entrance examination"@en ,
+                        "Modalidad de la convocatoria: Oposición, Concurso o Concurso-oposición"@es ;
+           rdfs:label "Modalidad"@es ,
+                      "Modality"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno
+:plazaPorTurno rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :ConvocatoriaEmpleoPublico ;
+               rdfs:range :PlazaPorTurno ;
+               rdfs:comment "Job position corresponding to each shift of presentation: free, stabilization, internal promotion, reserved for some reason"@en ,
+                            "Plaza que corresponde a cada turno de presentación: libre, estabilización, promoción interna, reservado por algún motivo"@es ;
+               rdfs:label "Job vacancy per shift"@en ,
+                          "Plaza por turno"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP
+:plazasCEP rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :OfertaEmpleoPublico ;
+           rdfs:range :ConvocatoriaEmpleoPublico ;
+           rdfs:comment "Job vacancies of Public Employment Offer that go to the Calls for Public Employment"@en ,
+                        "Plazas de la Oferta de Empleo Público que se concretan en una Convocatoria de Empleo Público"@es ;
+           rdfs:label "plazas a CEP"@es ,
+                      "public job vacancies from "@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP
+:plazasOEP rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :ConvocatoriaEmpleoPublico ;
+           rdfs:range :OfertaEmpleoPublico ;
+           rdfs:comment "Job vacancies of the Call for Public Employment that come from a Public Employment Offer"@en ,
+                        "Plazas de la Convocatoria de Empleo Público que viene de una Oferta de Empleo Público"@es ;
+           rdfs:label "Public job vacancies from PEO"@en ,
+                      "plazas de OEP"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica
+:sePublica rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:range :BoletinOficial ;
+           rdfs:comment "Donde se publica el anuncio realizado por la administración"@es ,
+                        "Where the announcement is published"@en ;
+           rdfs:label "is published in"@en ,
+                      "se publica en"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza
+:turnoPlaza rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :PlazaPorTurno ;
+            rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno>
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
+            rdfs:comment "Shift of presentation: free, stabilization, internal promotion, reserved for some reason"@en ,
+                         "Turno de presentación para una plaza: libre, estabilización, promoción interna, reservado por algún motivo"@es ;
+            rdfs:label "Shift of the job vacancy"@en ,
+                       "Turno de la Plaza"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                   rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> ;
+                                                                                   rdfs:comment "Autonomous Area, Autonomous Community or Autonomous to which the geographic accident or administrative entity belongs"@en ,
+                                                                                                "Autonomía (Comunidad Autónoma o Ciudad Autónoma) a la que pertenece un fenómeno geográfico o una entidad administrativa."@es ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "belongs to the autonomous area"@en ,
+                                                                                              "pertenece a la autonomía"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                   rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> ;
+                                                                                   rdfs:comment "Municipality to which the geographic accident or the administrative entity belongs"@en ,
+                                                                                                "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa."@es ;
+                                                                                   rdfs:label "belongs to the municipality"@en ,
+                                                                                              "pertenece al municipio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                                   rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> ;
+                                                                                   rdfs:comment "Province to which the geographic accident or the administrative entity belongs"@en ,
+                                                                                                "Provincia a la que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
+                                                                                   rdfs:label "belongs to the province"@en ,
+                                                                                              "pertenece a la provincia"@es .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                               rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                               rdfs:label "En taxonomía"@es ,
+                                                          "It is in Scheme"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un recurso, como por ejemplo un concepto, con un esquema de conceptos o taxonomía en el que se incluye."@es ,
+                                                                                                "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://data.europa.eu/eli/ontology#id_local
+<http://data.europa.eu/eli/ontology#id_local> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain [ rdf:type owl:Class ;
+                                                            owl:unionOf ( <http://data.europa.eu/eli/ontology#Format>
+                                                                          <http://data.europa.eu/eli/ontology#LegalExpression>
+                                                                          <http://data.europa.eu/eli/ontology#LegalResource>
+                                                                        )
+                                                          ] ;
+                                              rdfs:range [ rdf:type rdfs:Datatype ;
+                                                           owl:unionOf ( xsd:anyURI
+                                                                         xsd:string
+                                                                       )
+                                                         ] ;
+                                              :specificPropertyOf <http://purl.org/dc/terms/identifier> ;
+                                              rdfs:comment "The unique identifier used in a local reference system to maintain backwards compatibility. For examples the CELEX at EU level, or the NOR in France."@en ;
+                                              rdfs:label "local id"@en ;
+                                              owl:versionInfo "created in v1.0" .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "A description of the resource within a given context."@en ,
+                                                    "Una descripción del recurso dentro de un contexto dado."@es ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                       rdfs:label "Descripción"@es ,
+                                                  "Description"@en .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment "An unambiguous reference to the resource within a given context."@en ,
+                                                   "Referencia inequívoca al recurso dentro de un contexto dado."@es ;
+                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                      rdfs:label "Identificador"@es ,
+                                                 "Identifier"@en .
+
+
+###  http://schema.org/abstract
+<http://schema.org/abstract> rdf:type owl:DatatypeProperty ;
+                             rdfs:domain <http://schema.org/DigitalDocument> ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment "Alternate name, alias or popular name of some Thing."@en ,
+                                          "Nombre alternativo, popular o por el que se conoce a algo."@es ;
+                             rdfs:isDefinedBy <http://schema.org/> ;
+                             rdfs:label "Abstract"@en ,
+                                        "Resumen"@es .
+
+
+###  http://schema.org/datePublished
+<http://schema.org/datePublished> rdf:type owl:DatatypeProperty ;
+                                  rdfs:range xsd:dateTime ;
+                                  rdfs:comment "La fecha y hora de publicación en formato ISO 8601"@es ,
+                                               "The date and time of publication in ISO 8601 date format"@en ;
+                                  rdfs:isDefinedBy <http://schema.org/> ;
+                                  rdfs:label "date of publipublished dateosted incidence date"@en ,
+                                             "fecha de publicación"@es .
+
+
+###  http://schema.org/url
+<http://schema.org/url> rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:anyURI ;
+                        rdfs:comment "Dirección URL pública donde puedes obtener información de la entidad"@en ,
+                                     "Public URL where you can get some information from the entity"@es ;
+                        rdfs:isDefinedBy <http://schema.org/> ;
+                        rdfs:label "URL"@en ,
+                                   "URL"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases
+:bases rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:range xsd:anyURI ;
+       rdfs:comment ""@en ,
+                    ""@es ;
+       rdfs:domain "" ;
+       rdfs:label ""@en ,
+                  "Bases"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones
+:disposiciones rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:range xsd:string ;
+               rdfs:comment ""@en ,
+                            ""@es ;
+               rdfs:domain "" ;
+               rdfs:label ""@en ,
+                          "Disposiciones"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo
+:estadoPlazo rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment ""@en ,
+                          ""@es ;
+             rdfs:domain "" ;
+             rdfs:label ""@en ,
+                        "Estado del Plazo"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion
+:fechaAprobacion rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:range xsd:date ;
+                 rdfs:comment ""@en ,
+                              "duda de si eli:datePublication es suficiente"@es ;
+                 rdfs:domain "" ;
+                 rdfs:label ""@en ,
+                            "Fecha de aprobación"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion
+:fechaResolucion rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:range xsd:date ;
+                 rdfs:comment ""@en ,
+                              "duda de si eli:first_day_of_entry_into_force es suficiente"@es ;
+                 rdfs:domain "" ;
+                 rdfs:label ""@en ,
+                            "Fecha de resolución"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion
+:formularioInscripcion rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:range xsd:anyURI ;
+                       rdfs:comment ""@en ,
+                                    ""@es ;
+                       rdfs:domain "" ;
+                       rdfs:label ""@en ,
+                                  "Formulario de inscripción"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria
+:listaEsperaExtraordinaria rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:range xsd:boolean ;
+                           rdfs:comment ""@en ,
+                                        ""@es ;
+                           rdfs:domain "" ;
+                           rdfs:label ""@en ,
+                                      "Lista de Espera Extraordinaria"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numero
+:numero rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:range xsd:string ;
+        rdfs:comment ""@en ,
+                     "Quizás algo de eli lo sustituya"@es ;
+        rdfs:domain "" ;
+        rdfs:label ""@en ,
+                   "Número"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas
+:numeroPlazasConvocadas rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:range xsd:integer ;
+                        rdfs:comment ""@en ,
+                                     ""@es ;
+                        rdfs:domain "" ;
+                        rdfs:label ""@en ,
+                                   "Número de plazas convocadas"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones
+:observaciones rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:range xsd:string ;
+               rdfs:comment ""@en ,
+                            ""@es ;
+               rdfs:domain "" ;
+               rdfs:label ""@en ,
+                          "Observaciones"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas
+:pruebas rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:range xsd:string ;
+         rdfs:comment ""@en ,
+                      ""@es ;
+         rdfs:domain "" ;
+         rdfs:label ""@en ,
+                    "Pruebas"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos
+:requisitos rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:range xsd:string ;
+            rdfs:comment ""@en ,
+                         ""@es ;
+            rdfs:domain "" ;
+            rdfs:label ""@en ,
+                       "Requisitos"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.europa.eu/eli/ontology#Format
+<http://data.europa.eu/eli/ontology#Format> rdf:type owl:Class .
+
+
+###  http://data.europa.eu/eli/ontology#LegalExpression
+<http://data.europa.eu/eli/ontology#LegalExpression> rdf:type owl:Class .
+
+
+###  http://data.europa.eu/eli/ontology#LegalResource
+<http://data.europa.eu/eli/ontology#LegalResource> rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/AdministrativeRegion
+<http://dbpedia.org/ontology/AdministrativeRegion> rdf:type owl:Class ;
+                                                   owl:equivalentClass <http://schema.org/AdministrativeArea> ;
+                                                   rdfs:label "Administrative Region"@en ,
+                                                              "Región administrativa"@es .
+
+
+###  http://dbpedia.org/ontology/GovernmentalAdministrativeRegion
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://dbpedia.org/ontology/AdministrativeRegion> ;
+                                                               rdfs:label "Governmental Administrative Region"@en ,
+                                                                          "Región administrativa gubernamental"@es .
+
+
+###  http://dbpedia.org/ontology/Municipality
+<http://dbpedia.org/ontology/Municipality> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                                           rdfs:label "Municipalidad"@es ,
+                                                      "Municipality"@en .
+
+
+###  http://dbpedia.org/ontology/Province
+<http://dbpedia.org/ontology/Province> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                                       rdfs:label "Province"@en ,
+                                                  "Provincia"@es .
+
+
+###  http://schema.org/AdministrativeArea
+<http://schema.org/AdministrativeArea> rdf:type owl:Class .
+
+
+###  http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> rdf:type owl:Class ;
+                                 rdfs:comment "El más genérico tipo de trabajo creativo incluidos libros, películas, fotografías, software, etc."@es ,
+                                              "The most generic kind of creative work, including books, movies, photographs, software programs, etc."@en ;
+                                 rdfs:label "Creative Work"@en ,
+                                            "Trabajo creativo"@es .
+
+
+###  http://schema.org/DigitalDocument
+<http://schema.org/DigitalDocument> rdf:type owl:Class ;
+                                    rdfs:comment "An electronic file or document"@en ,
+                                                 "Un archivo o documento electrónico"@es ;
+                                    rdfs:label "Digital Document"@en ,
+                                               "Documento digital"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial
+:BoletinOficial rdf:type owl:Class ;
+                rdfs:subClassOf <http://data.europa.eu/eli/ontology#Format> ;
+                rdfs:comment "Boletín oficial de la autoridad administrativa"@es ,
+                             "Official Gazette of the administrative authority "@en ;
+                rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> ;
+                rdfs:label "Boletín Oficial"@es ,
+                           "Official Gazette"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico
+:ConvocatoriaEmpleoPublico rdf:type owl:Class ;
+                           rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalExpression> ;
+                           rdfs:comment "Convocatoria de Empleo Público para cubrir plazas que provienen de la Oferta de Empleo Público"@es ,
+                                        "Public Employment Call that comes from Public Employment Announcement"@en ;
+                           rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> ;
+                           rdfs:label "Convocatoria de Empleo Público"@es ,
+                                      "Public Employment Call"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico
+:OfertaEmpleoPublico rdf:type owl:Class ;
+                     rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalExpression> ;
+                     rdfs:comment "Oferta de Empleo Público que realiza la administración para cubrir plazas según las necesidades"@es ,
+                                  "Public Employment Announcement made by the administration to cover positions according to their needs"@en ;
+                     rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> ;
+                     rdfs:label "Oferta de Empleo Público"@es ,
+                                "Public Employment Announcement"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno
+:PlazaPorTurno rdf:type owl:Class ;
+               rdfs:comment "Plaza de trabajo por turno o vía de ingreso a la convocatoria"@es ,
+                            "Workplace per shift or way to entry to the call "@en ;
+               rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> ;
+               rdfs:label "Plaza por turno"@es ,
+                          "Workplace per shift"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                                                                                   <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                   rdfs:comment "Comunidad Autónoma o Ciudad Autónoma"@es ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "Autonomía"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> ;
+                                                                                           <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                           rdfs:comment "Entidad territorial que, dentro del ordenamiento constitucional del Estado español, está dotada de autonomía legislativa y competencias ejecutivas, así como de la facultad de administrarse mediante sus propios representantes [fuente: Diccionario de la lengua española (DRAE) 2011]"@es ;
+                                                                                           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                           rdfs:label "Comunidad Autónoma"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://dbpedia.org/ontology/Municipality> ;
+                                                                                   <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                   rdfs:comment """
+	Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do
+      """@es ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "Municipio"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://dbpedia.org/ontology/Province> ;
+                                                                                   <http://purl.org/dc/terms/issued> "2014-03-28" ;
+                                                                                   rdfs:comment """
+	Cada una de las grandes divisiones de un territorio o Estado, sujeta por lo común a una autoridad administrativa [fuente: Diccionario de la lengua española (DRAE) 2011]
+      """@es ,
+                                                                                                """Entidad local con personalidad jurídica propia, determinada por la agrupación de Municipios y división territorial para el cumplimiento de las actividades del Estado. La delimitación territorial de Provincia está recogida en el Registro Central de Cartografía del IGN [fuente: Modelo de Direcciones de la Administración General del Estado v.2] Su identificador, que se especifica con la propiedad dct:identifier, es el proporcionado por el INE en http://www.ine.es/daco/daco42/codmun/codmun09/09codmun.xls Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do
+      """@es ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+                                                                                   rdfs:label "Provincia"@es .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              owl:disjointWith <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                              <http://purl.org/dc/terms/issued> "2004-02-xx" ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#> ;
+                                              rdfs:label "Concept"@en ,
+                                                         "Concepto"@es ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en ,
+                                                                                               "Una idea o noción abstracta; una unidad de pensamiento."@es .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class ;
+                                                    <http://purl.org/dc/terms/issued> "2004-02-xx" ;
+                                                    rdfs:comment "A concept scheme may be defined to include concepts from different sources."@en ,
+                                                                 "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en ,
+                                                                 "Un esquema de conceptos definido para incluir conceptos de distintas fuentes."@es ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#> ;
+                                                    rdfs:label "Concept Scheme"@en ,
+                                                               "Esquema de conceptos"@es ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                            rdfs:label "Body or scale"@en ,
+                                                                                       "Cuerpo o escala"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                                      rdfs:label "Empleado público"@es ,
+                                                                                                 "Public Employee"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                                       rdfs:label "Grupo profesional"@es ,
+                                                                                                  "Profesional Group"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                               rdfs:label "Modalidad"@es ,
+                                                                                          "Mode"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                           rdfs:label "Entry shift"@en ,
+                                                                                      "Turno de ingreso"@es .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/terms/created> rdfs:comment "Date of creation of the resource."@en ,
+                                                "Fecha de creación del recurso."@es ;
+                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                   rdfs:label "Creado"@es ,
+                                              "Created"@en .
+
+
+<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#issued-003> ;
+                                  rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ;
+                                  rdfs:isDefinedBy "http://purl.org/dc/terms/"@en ;
+                                  rdfs:label "Date Issued"@en .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

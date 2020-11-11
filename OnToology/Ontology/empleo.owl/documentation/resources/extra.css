@@ -55,6 +55,11 @@ h1 {
     color:purple;
     font-weight:bold;    
 }
+h4 {
+    margin-top: 3px;
+    padding-bottom: 5px;
+	border-bottom: 1px solid navy;
+}
 
 h3 {
     margin-top: 3px;

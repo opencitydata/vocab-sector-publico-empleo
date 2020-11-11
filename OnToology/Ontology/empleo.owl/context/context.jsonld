@@ -29,10 +29,15 @@
       "@type" : "@id"
     },
     "issued" : {
-      "@id" : "http://purl.org/dc/terms/issued"
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "dateModified" : {
+      "@id" : "http://schema.org/dateModified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "fechaAprobacion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion",
@@ -52,10 +57,6 @@
     },
     "hasVersion" : {
       "@id" : "http://purl.org/dc/terms/hasVersion"
-    },
-    "sfWithin" : {
-      "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
-      "@type" : "@id"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
@@ -79,12 +80,6 @@
     "Municipio" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
     },
-    "LegalResource" : {
-      "@id" : "http://data.europa.eu/eli/ontology#LegalResource"
-    },
-    "Format" : {
-      "@id" : "http://data.europa.eu/eli/ontology#Format"
-    },
     "Province" : {
       "@id" : "http://dbpedia.org/ontology/Province"
     },
@@ -94,6 +89,14 @@
     },
     "AdministrativeRegion" : {
       "@id" : "http://dbpedia.org/ontology/AdministrativeRegion"
+    },
+    "plazas" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "basesURL" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "GovernmentalAdministrativeRegion" : {
       "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
@@ -107,7 +110,11 @@
     },
     "bases" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "name" : {
+      "@id" : "http://schema.org/name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -164,7 +171,8 @@
       "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
     },
     "title" : {
-      "@id" : "http://purl.org/dc/elements/1.1/title"
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher"
@@ -219,12 +227,9 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza",
       "@type" : "@id"
     },
-    "numero" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numero",
+    "alternateName" : {
+      "@id" : "http://schema.org/alternateName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "AdministrativeArea" : {
-      "@id" : "http://schema.org/AdministrativeArea"
     },
     "inScheme" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
@@ -233,9 +238,6 @@
     "description" : {
       "@id" : "http://purl.org/dc/terms/description",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "LegalExpression" : {
-      "@id" : "http://data.europa.eu/eli/ontology#LegalExpression"
     },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"

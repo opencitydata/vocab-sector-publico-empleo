@@ -57,18 +57,6 @@
   } ]
 }, {
   "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/eli/ontology#Format"
-    }, {
-      "@id" : "http://data.europa.eu/eli/ontology#LegalExpression"
-    }, {
-      "@id" : "http://data.europa.eu/eli/ontology#LegalResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -116,33 +104,27 @@
     } ]
   } ]
 }, {
-  "@id" : "http://data.europa.eu/eli/ontology#Format",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://data.europa.eu/eli/ontology#LegalExpression",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://data.europa.eu/eli/ontology#LegalResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://data.europa.eu/eli/ontology#id_local",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#specificPropertyOf" : [ {
     "@id" : "http://purl.org/dc/terms/identifier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El identificador único que se usa como una referencia en el sistema local para mantener la compatibilidad hacia atrás. Por ejemplo el CELEX a nivel de la UE o el NOR en Francia."
+  }, {
     "@language" : "en",
     "@value" : "The unique identifier used in a local reference system to maintain backwards compatibility. For examples the CELEX at EU level, or the NOR in France."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid21"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "ID de ELI"
+  }, {
     "@language" : "en",
     "@value" : "local id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid25"
+    "@id" : "_:genid21"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "created in v1.0"
@@ -156,9 +138,6 @@
   }, {
     "@language" : "es",
     "@value" : "Región administrativa"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://schema.org/AdministrativeArea"
   } ]
 }, {
   "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion",
@@ -225,27 +204,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Date of creation of the resource."
-  }, {
-    "@language" : "es",
-    "@value" : "Fecha de creación del recurso."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/dc/terms/creator"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/terms/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Creado"
-  }, {
-    "@language" : "en",
-    "@value" : "Created"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -297,21 +256,35 @@
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/hasVersion" : [ {
     "@id" : "http://dublincore.org/usage/terms/history/#issued-003"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date of formal issuance (e.g., publication) of the resource."
+  }, {
+    "@language" : "es",
+    "@value" : "La práctica recomendada es describir la fecha, fecha/hora o periodo de tiempo como se expresa en la propiedad date, de la cual es una subpropiedad."
+  }, {
+    "@language" : "en",
+    "@value" : "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  }, {
     "@language" : "en",
     "@value" : "http://purl.org/dc/terms/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Date Issued"
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha de emisión"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/dc/elements/1.1/date"
@@ -323,14 +296,34 @@
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A name given to the resource."
+  }, {
+    "@language" : "es",
+    "@value" : "Una denominación dada al recurso."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Title"
+  }, {
+    "@language" : "es",
+    "@value" : "Título"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/AdministrativeArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://schema.org/CreativeWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -392,6 +385,52 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "http://schema.org/alternateName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Alternate name, alias or popular name of some Thing."
+  }, {
+    "@language" : "es",
+    "@value" : "Nombre alternativo, popular o por el que se conoce a algo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Alternate Name"
+  }, {
+    "@language" : "en",
+    "@value" : "Nombre alternativo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://schema.org/dateModified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La última fecha en la que el trabajo creativo se ha modificado o cuando la fecha del archivo se ha actualizado por un alimentador de datos."
+  }, {
+    "@language" : "en",
+    "@value" : "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "date of modification"
+  }, {
+    "@language" : "es",
+    "@value" : "fecha de modificación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
   "@id" : "http://schema.org/datePublished",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -415,6 +454,29 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El nombre de una entidad."
+  }, {
+    "@language" : "en",
+    "@value" : "The name of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://schema.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Name"
+  }, {
+    "@language" : "es",
+    "@value" : "Nombre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "http://schema.org/url",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -429,10 +491,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "URL"
+    "@value" : "Public URL"
   }, {
     "@language" : "es",
-    "@value" : "URL"
+    "@value" : "URL Pública"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -566,9 +628,6 @@
   }, {
     "@language" : "en",
     "@value" : "Official Gazette"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/eli/ontology#Format"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico",
@@ -589,9 +648,6 @@
   }, {
     "@language" : "en",
     "@value" : "Public Employment Call"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/eli/ontology#LegalExpression"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico",
@@ -612,9 +668,6 @@
   }, {
     "@language" : "en",
     "@value" : "Public Employment Announcement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/eli/ontology#LegalExpression"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno",
@@ -640,21 +693,47 @@
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "es",
+    "@value" : "Bases de la convocatoria de empleo público"
+  }, {
+    "@language" : "en",
+    "@value" : "Rules of the call for public employment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bases"
+  }, {
+    "@language" : "en",
+    "@value" : "Rules"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "URL de las bases de la convocatoria de empleo público"
+  }, {
+    "@language" : "en",
+    "@value" : "URL of the rules of the call for public employment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Rules URL"
   }, {
     "@language" : "es",
-    "@value" : "Bases"
+    "@value" : "URL de las bases"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -692,21 +771,21 @@
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "es",
-    "@value" : ""
+    "@value" : "Disposiciones legales"
+  }, {
+    "@language" : "en",
+    "@value" : "Legal provisions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "es",
-    "@value" : "Disposiciones"
+    "@value" : "Disposiciones legales de una convocatoria de empleo público."
+  }, {
+    "@language" : "en",
+    "@value" : "Legal provisions of a public call for employment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -745,20 +824,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Deadline status"
   }, {
     "@language" : "es",
-    "@value" : ""
+    "@value" : "Estado del plazo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "es",
-    "@value" : "Estado del Plazo"
+    "@value" : "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público."
+  }, {
+    "@language" : "en",
+    "@value" : "Status of the deadline for the submission of applications for the call for public employment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -771,20 +850,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : "duda de si eli:datePublication es suficiente"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : ""
+    "@value" : "Date of Approval"
   }, {
     "@language" : "es",
     "@value" : "Fecha de aprobación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo_:genid2147483671"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Date of Approval of the Call or the Offer of public employment."
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha de aprobación de la convocatoria o de la oferta de empleo público"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -797,17 +876,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Date of resolution of the call"
   }, {
     "@language" : "es",
-    "@value" : "duda de si eli:first_day_of_entry_into_force es suficiente"
+    "@value" : "Fecha de resolución de la convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Date of Decision"
   }, {
     "@language" : "es",
     "@value" : "Fecha de resolución"
@@ -823,20 +902,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Registration Form URL for the call for public employment."
   }, {
     "@language" : "es",
-    "@value" : ""
+    "@value" : "URL del formulario de inscripción a la convocatoria de empleo público."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "es",
     "@value" : "Formulario de inscripción"
+  }, {
+    "@language" : "en",
+    "@value" : "Registration Form"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -875,17 +954,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Call for an extraordinary waiting list"
   }, {
     "@language" : "es",
-    "@value" : ""
+    "@value" : "Convocatoria para una lista de espera extraordinaria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Extraordinary Waiting List"
   }, {
     "@language" : "es",
     "@value" : "Lista de Espera Extraordinaria"
@@ -923,50 +1002,24 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numero",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : "Quizás algo de eli lo sustituya"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
-    "@language" : "es",
-    "@value" : "Número"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
-  } ]
-}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Number of vacancies"
   }, {
     "@language" : "es",
-    "@value" : ""
+    "@value" : "Número de plazas convocadas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "es",
-    "@value" : "Número de plazas convocadas"
+    "@value" : "Plazas"
+  }, {
+    "@language" : "en",
+    "@value" : "Vacancies"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -979,17 +1032,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Comments on the public employment call."
   }, {
     "@language" : "es",
-    "@value" : ""
+    "@value" : "Observaciones a la convocatoria de empleo público"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Comments"
   }, {
     "@language" : "es",
     "@value" : "Observaciones"
@@ -1025,6 +1078,32 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Número de plazas totales de la convocatoria de empleo público."
+  }, {
+    "@language" : "en",
+    "@value" : "Total number of places in the public employment call."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Number of places"
+  }, {
+    "@language" : "es",
+    "@value" : "Número de plazas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP",
@@ -1082,18 +1161,18 @@
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : ""
-  }, {
     "@language" : "es",
-    "@value" : ""
+    "@value" : "Pruebas selectivas para la convocatoria de empleo público."
+  }, {
+    "@language" : "en",
+    "@value" : "Selective tests for the call for public employment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Comments"
   }, {
     "@language" : "es",
     "@value" : "Pruebas"
@@ -1109,17 +1188,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Requirements"
   }, {
     "@language" : "es",
-    "@value" : ""
+    "@value" : "Requisitos"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "Requirements of the "
   }, {
     "@language" : "es",
     "@value" : "Requisitos"
@@ -1182,6 +1261,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo_:genid2147483671",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1287,9 +1369,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#sfWithin"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio",
@@ -1310,9 +1389,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#sfWithin"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia",
@@ -1333,9 +1409,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#sfWithin"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo",
@@ -1387,9 +1460,6 @@
     "@language" : "es",
     "@value" : "Turno de ingreso"
   } ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]

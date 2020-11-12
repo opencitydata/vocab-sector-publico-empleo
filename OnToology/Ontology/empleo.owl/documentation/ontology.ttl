@@ -80,7 +80,8 @@
 
 
 ###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty ;
+                                   rdfs:domain <http://purl.org/dc/terms/creator> .
 
 
 ###  http://purl.org/dc/terms/hasVersion
@@ -89,8 +90,7 @@
 
 ###  http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty ;
-                                  rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/date> ;
-                                  rdfs:range rdfs:Literal .
+                                  rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/date> .
 
 
 ###  http://purl.org/dc/terms/license
@@ -268,6 +268,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
                                                                                    rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> ;
                                                                                    rdfs:comment "Autonomous Area, Autonomous Community or Autonomous to which the geographic accident or administrative entity belongs"@en ,
                                                                                                 "Autonomía (Comunidad Autónoma o Ciudad Autónoma) a la que pertenece un fenómeno geográfico o una entidad administrativa."@es ;
@@ -278,6 +279,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
                                                                                    rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> ;
                                                                                    rdfs:comment "Municipality to which the geographic accident or the administrative entity belongs"@en ,
                                                                                                 "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa."@es ;
@@ -287,11 +289,16 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
                                                                                    rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> ;
                                                                                    rdfs:comment "Province to which the geographic accident or the administrative entity belongs"@en ,
                                                                                                 "Provincia a la que pertenece un fenómeno geográfico o una entidad administrativa"@es ;
                                                                                    rdfs:label "belongs to the province"@en ,
                                                                                               "pertenece a la provincia"@es .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -311,17 +318,25 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://data.europa.eu/eli/ontology#id_local
 <http://data.europa.eu/eli/ontology#id_local> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain [ rdf:type owl:Class ;
+                                                            owl:unionOf ( <http://data.europa.eu/eli/ontology#Format>
+                                                                          <http://data.europa.eu/eli/ontology#LegalExpression>
+                                                                          <http://data.europa.eu/eli/ontology#LegalResource>
+                                                                        )
+                                                          ] ;
                                               rdfs:range [ rdf:type rdfs:Datatype ;
                                                            owl:unionOf ( xsd:anyURI
                                                                          xsd:string
                                                                        )
                                                          ] ;
                                               :specificPropertyOf <http://purl.org/dc/terms/identifier> ;
-                                              rdfs:comment "El identificador único que se usa como una referencia en el sistema local para mantener la compatibilidad hacia atrás. Por ejemplo el CELEX a nivel de la UE o el NOR en Francia."@es ,
-                                                           "The unique identifier used in a local reference system to maintain backwards compatibility. For examples the CELEX at EU level, or the NOR in France."@en ;
-                                              rdfs:label "ID de ELI"@es ,
-                                                         "local id"@en ;
+                                              rdfs:comment "The unique identifier used in a local reference system to maintain backwards compatibility. For examples the CELEX at EU level, or the NOR in France."@en ;
+                                              rdfs:label "local id"@en ;
                                               owl:versionInfo "created in v1.0" .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/dc/terms/description
@@ -344,20 +359,6 @@ xsd:date rdf:type rdfs:Datatype .
                                                  "Identifier"@en .
 
 
-###  http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> rdf:type owl:DatatypeProperty .
-
-
-###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty ;
-                                 rdfs:range rdfs:Literal ;
-                                 rdfs:comment "A name given to the resource."@en ,
-                                              "Una denominación dada al recurso."@es ;
-                                 rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                 rdfs:label "Title"@en ,
-                                            "Título"@es .
-
-
 ###  http://schema.org/abstract
 <http://schema.org/abstract> rdf:type owl:DatatypeProperty ;
                              rdfs:domain <http://schema.org/DigitalDocument> ;
@@ -367,26 +368,6 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:isDefinedBy <http://schema.org/> ;
                              rdfs:label "Abstract"@en ,
                                         "Resumen"@es .
-
-
-###  http://schema.org/alternateName
-<http://schema.org/alternateName> rdf:type owl:DatatypeProperty ;
-                                  rdfs:range xsd:string ;
-                                  rdfs:comment "Alternate name, alias or popular name of some Thing."@en ,
-                                               "Nombre alternativo, popular o por el que se conoce a algo."@es ;
-                                  rdfs:isDefinedBy <http://schema.org/> ;
-                                  rdfs:label "Alternate Name"@es ,
-                                             "Nombre alternativo"@en .
-
-
-###  http://schema.org/dateModified
-<http://schema.org/dateModified> rdf:type owl:DatatypeProperty ;
-                                 rdfs:range xsd:dateTime ;
-                                 rdfs:comment "La última fecha en la que el trabajo creativo se ha modificado o cuando la fecha del archivo se ha actualizado por un alimentador de datos."@es ,
-                                              "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed."@en ;
-                                 rdfs:isDefinedBy <http://schema.org/> ;
-                                 rdfs:label "date of modification"@en ,
-                                            "fecha de modificación"@es .
 
 
 ###  http://schema.org/datePublished
@@ -399,89 +380,68 @@ xsd:date rdf:type rdfs:Datatype .
                                              "fecha de publicación"@es .
 
 
-###  http://schema.org/name
-<http://schema.org/name> rdf:type owl:DatatypeProperty ;
-                         rdfs:range xsd:string ;
-                         rdfs:comment "El nombre de una entidad."@es ,
-                                      "The name of the item."@en ;
-                         rdfs:isDefinedBy <http://schema.org/> ;
-                         rdfs:label "Name"@en ,
-                                    "Nombre"@es .
-
-
 ###  http://schema.org/url
 <http://schema.org/url> rdf:type owl:DatatypeProperty ;
                         rdfs:range xsd:anyURI ;
                         rdfs:comment "Dirección URL pública donde puedes obtener información de la entidad"@en ,
                                      "Public URL where you can get some information from the entity"@es ;
                         rdfs:isDefinedBy <http://schema.org/> ;
-                        rdfs:label "Public URL"@en ,
-                                   "URL Pública"@es .
+                        rdfs:label "URL"@en ,
+                                   "URL"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases
 :bases rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:range xsd:string ;
-       rdfs:comment "Bases de la convocatoria de empleo público"@es ,
-                    "Rules of the call for public employment"@en ;
+       rdfs:range xsd:anyURI ;
+       rdfs:comment ""@en ,
+                    ""@es ;
        rdfs:domain "" ;
-       rdfs:label "Bases"@es ,
-                  "Rules"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL
-:basesURL rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf owl:topDataProperty ;
-          rdfs:range xsd:anyURI ;
-          rdfs:comment "URL de las bases de la convocatoria de empleo público"@es ,
-                       "URL of the rules of the call for public employment."@en ;
-          rdfs:domain "" ;
-          rdfs:label "Rules URL"@en ,
-                     "URL de las bases"@es .
+       rdfs:label ""@en ,
+                  "Bases"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones
 :disposiciones rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:range xsd:string ;
-               rdfs:comment "Disposiciones legales"@es ,
-                            "Legal provisions"@en ;
+               rdfs:comment ""@en ,
+                            ""@es ;
                rdfs:domain "" ;
-               rdfs:label "Disposiciones legales de una convocatoria de empleo público."@es ,
-                          "Legal provisions of a public call for employment."@en .
+               rdfs:label ""@en ,
+                          "Disposiciones"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo
 :estadoPlazo rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:range xsd:boolean ;
-             rdfs:comment "Deadline status"@en ,
-                          "Estado del plazo"@es ;
+             rdfs:comment ""@en ,
+                          ""@es ;
              rdfs:domain "" ;
-             rdfs:label "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público."@es ,
-                        "Status of the deadline for the submission of applications for the call for public employment."@en .
+             rdfs:label ""@en ,
+                        "Estado del Plazo"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion
 :fechaAprobacion rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
-                 rdfs:domain _:genid2147483671 ;
                  rdfs:range xsd:date ;
-                 rdfs:comment "Date of Approval"@en ,
-                              "Fecha de aprobación"@es ;
-                 rdfs:label "Date of Approval of the Call or the Offer of public employment."@en ,
-                            "Fecha de aprobación de la convocatoria o de la oferta de empleo público"@es .
+                 rdfs:comment ""@en ,
+                              "duda de si eli:datePublication es suficiente"@es ;
+                 rdfs:domain "" ;
+                 rdfs:label ""@en ,
+                            "Fecha de aprobación"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion
 :fechaResolucion rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:range xsd:date ;
-                 rdfs:comment "Date of resolution of the call"@en ,
-                              "Fecha de resolución de la convocatoria"@es ;
+                 rdfs:comment ""@en ,
+                              "duda de si eli:first_day_of_entry_into_force es suficiente"@es ;
                  rdfs:domain "" ;
-                 rdfs:label "Date of Decision"@en ,
+                 rdfs:label ""@en ,
                             "Fecha de resolución"@es .
 
 
@@ -489,65 +449,65 @@ xsd:date rdf:type rdfs:Datatype .
 :formularioInscripcion rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:range xsd:anyURI ;
-                       rdfs:comment "Registration Form URL for the call for public employment."@en ,
-                                    "URL del formulario de inscripción a la convocatoria de empleo público."@es ;
+                       rdfs:comment ""@en ,
+                                    ""@es ;
                        rdfs:domain "" ;
-                       rdfs:label "Formulario de inscripción"@es ,
-                                  "Registration Form"@en .
+                       rdfs:label ""@en ,
+                                  "Formulario de inscripción"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria
 :listaEsperaExtraordinaria rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf owl:topDataProperty ;
                            rdfs:range xsd:boolean ;
-                           rdfs:comment "Call for an extraordinary waiting list"@en ,
-                                        "Convocatoria para una lista de espera extraordinaria"@es ;
+                           rdfs:comment ""@en ,
+                                        ""@es ;
                            rdfs:domain "" ;
-                           rdfs:label "Extraordinary Waiting List"@en ,
+                           rdfs:label ""@en ,
                                       "Lista de Espera Extraordinaria"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numero
+:numero rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:range xsd:string ;
+        rdfs:comment ""@en ,
+                     "Quizás algo de eli lo sustituya"@es ;
+        rdfs:domain "" ;
+        rdfs:label ""@en ,
+                   "Número"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas
 :numeroPlazasConvocadas rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
                         rdfs:range xsd:integer ;
-                        rdfs:comment "Number of vacancies"@en ,
-                                     "Número de plazas convocadas"@es ;
+                        rdfs:comment ""@en ,
+                                     ""@es ;
                         rdfs:domain "" ;
-                        rdfs:label "Plazas"@es ,
-                                   "Vacancies"@en .
+                        rdfs:label ""@en ,
+                                   "Número de plazas convocadas"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones
 :observaciones rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:range xsd:string ;
-               rdfs:comment "Comments on the public employment call."@en ,
-                            "Observaciones a la convocatoria de empleo público"@es ;
+               rdfs:comment ""@en ,
+                            ""@es ;
                rdfs:domain "" ;
-               rdfs:label "Comments"@en ,
+               rdfs:label ""@en ,
                           "Observaciones"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas
-:plazas rdf:type owl:DatatypeProperty ;
-        rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:range xsd:integer ;
-        rdfs:comment "Número de plazas totales de la convocatoria de empleo público."@es ,
-                     "Total number of places in the public employment call."@en ;
-        rdfs:domain "" ;
-        rdfs:label "Number of places"@en ,
-                   "Número de plazas"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas
 :pruebas rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
          rdfs:range xsd:string ;
-         rdfs:comment "Pruebas selectivas para la convocatoria de empleo público."@es ,
-                      "Selective tests for the call for public employment."@en ;
+         rdfs:comment ""@en ,
+                      ""@es ;
          rdfs:domain "" ;
-         rdfs:label "Comments"@en ,
+         rdfs:label ""@en ,
                     "Pruebas"@es .
 
 
@@ -555,10 +515,10 @@ xsd:date rdf:type rdfs:Datatype .
 :requisitos rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:range xsd:string ;
-            rdfs:comment "Requirements"@en ,
-                         "Requisitos"@es ;
+            rdfs:comment ""@en ,
+                         ""@es ;
             rdfs:domain "" ;
-            rdfs:label "Requirements of the "@en ,
+            rdfs:label ""@en ,
                        "Requisitos"@es .
 
 
@@ -566,12 +526,21 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  _:genid2147483671
-_:genid2147483671 rdf:type owl:Class .
+###  http://data.europa.eu/eli/ontology#Format
+<http://data.europa.eu/eli/ontology#Format> rdf:type owl:Class .
+
+
+###  http://data.europa.eu/eli/ontology#LegalExpression
+<http://data.europa.eu/eli/ontology#LegalExpression> rdf:type owl:Class .
+
+
+###  http://data.europa.eu/eli/ontology#LegalResource
+<http://data.europa.eu/eli/ontology#LegalResource> rdf:type owl:Class .
 
 
 ###  http://dbpedia.org/ontology/AdministrativeRegion
 <http://dbpedia.org/ontology/AdministrativeRegion> rdf:type owl:Class ;
+                                                   owl:equivalentClass <http://schema.org/AdministrativeArea> ;
                                                    rdfs:label "Administrative Region"@en ,
                                                               "Región administrativa"@es .
 
@@ -597,6 +566,10 @@ _:genid2147483671 rdf:type owl:Class .
                                                   "Provincia"@es .
 
 
+###  http://schema.org/AdministrativeArea
+<http://schema.org/AdministrativeArea> rdf:type owl:Class .
+
+
 ###  http://schema.org/CreativeWork
 <http://schema.org/CreativeWork> rdf:type owl:Class ;
                                  rdfs:comment "El más genérico tipo de trabajo creativo incluidos libros, películas, fotografías, software, etc."@es ,
@@ -615,6 +588,7 @@ _:genid2147483671 rdf:type owl:Class .
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial
 :BoletinOficial rdf:type owl:Class ;
+                rdfs:subClassOf <http://data.europa.eu/eli/ontology#Format> ;
                 rdfs:comment "Boletín oficial de la autoridad administrativa"@es ,
                              "Official Gazette of the administrative authority "@en ;
                 rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> ;
@@ -624,6 +598,7 @@ _:genid2147483671 rdf:type owl:Class .
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico
 :ConvocatoriaEmpleoPublico rdf:type owl:Class ;
+                           rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalExpression> ;
                            rdfs:comment "Convocatoria de Empleo Público para cubrir plazas que provienen de la Oferta de Empleo Público"@es ,
                                         "Public Employment Call that comes from Public Employment Announcement"@en ;
                            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> ;
@@ -633,6 +608,7 @@ _:genid2147483671 rdf:type owl:Class .
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico
 :OfertaEmpleoPublico rdf:type owl:Class ;
+                     rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalExpression> ;
                      rdfs:comment "Oferta de Empleo Público que realiza la administración para cubrir plazas según las necesidades"@es ,
                                   "Public Employment Announcement made by the administration to cover positions according to their needs"@en ;
                      rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> ;
@@ -757,14 +733,17 @@ _:genid2147483671 rdf:type owl:Class .
 #    Annotations
 #################################################################
 
+<http://purl.org/dc/terms/created> rdfs:comment "Date of creation of the resource."@en ,
+                                                "Fecha de creación del recurso."@es ;
+                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                   rdfs:label "Creado"@es ,
+                                              "Created"@en .
+
+
 <http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#issued-003> ;
-                                  rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ,
-                                               "La práctica recomendada es describir la fecha, fecha/hora o periodo de tiempo como se expresa en la propiedad date, de la cual es una subpropiedad."@es ,
-                                               "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ,
-                                                   "http://purl.org/dc/terms/"@en ;
-                                  rdfs:label "Date Issued"@en ,
-                                             "Fecha de emisión"@es .
+                                  rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ;
+                                  rdfs:isDefinedBy "http://purl.org/dc/terms/"@en ;
+                                  rdfs:label "Date Issued"@en .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

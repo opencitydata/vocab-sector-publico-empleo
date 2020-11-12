@@ -14,7 +14,6 @@
 	 xmlns:schema="http://schema.org/"
 	 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
  	 xmlns:terms="http://purl.org/dc/terms/"
-	 xmlns:tmorg="http://w3id.org/transmodel/organisations#"
 	 xmlns:vann="http://purl.org/vocab/vann/"
 	 xmlns:xml="http://www.w3.org/XML/1998/namespace"
 	 xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
@@ -834,9 +833,7 @@
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">
       <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Municipality"/>
       <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-03-28</terms:issued>
-      <rdfs:comment xml:lang="es">
-	Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do
-      </rdfs:comment>
+      <rdfs:comment xml:lang="es">Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do     </rdfs:comment>
       <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
       <rdfs:label xml:lang="es">Municipio</rdfs:label>
     </owl:Class>

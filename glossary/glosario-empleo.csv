@@ -1,0 +1,149 @@
+Identificador,Concepto,Sinónimos/Términos afines,Definición,Provenance,Comentarios
+C1,Año de la OEP,,Año de publicación de la OEP,https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico,La oferta se puede realizar de forma anual. Se puede repetir la oferta para otro año pero sería la de otro año. Luego las convocatorias recogen las ofertas.
+C2,Bases (de la convocatoria),Bases legales,"En las bases de la convocatoria se recogen todas las especificaciones que la Administración requiere para ocupar la plaza:
+
+- La modalidad de la convocatoria (oposición, concurso y concurso-oposición)
+- Los requisitos para poder presentarse a las diferentes pruebas.
+- El número y características de las pruebas.
+
+Estas bases son las que debes consultar para presentarte a una oposición determinada.
+
+Las bases pueden ser rectificadas por publicación posterior de bases corregidas","- https://www.campustraining.es/noticias/diferencia-oferta-empleo-publico-convocatoria/ 
+- https://opositargratis.es/guia-del-opositor/",
+C3,Boletín Oficial (BO),Diario Oficial,"Se publican las plazas covocadas por el ayuntamiento en el boletín oficial del ayuntamiento, si dispone del mismo, y en el de la provincia o comunidad autónoma
+
+El boletín se identifica con un nombre y también con una fecha que suele formar parte del nombre","- https://www.coruna.gal/cmix/es/empleo/tipos-de-empleo/empleo-publico?argIdioma=es
+- https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico","¿En cuántos boletines oficiales se publica?
+
+En Zaragoza, por ejemplo, ""Se publica en el Boletín Ofiical de la Ciudad, Provincia, Diputación o Comunidad 28/02/2019"""
+C4,Bolsa de empleo,Bolsa de trabajo,"Según Zaragoza, la bolsa de empleo es el conjunto de listas de espera (una para cada una de las plazas/categorías profesionales) que contiene la relación de personas candidatas a las que podrán serles ofertadas nombramientos como personal no permanente.
+
+",https://www.zaragoza.es/oferta/informacion/generalnopermanente.jsp,"Convenimos que bolsa de empleo es sinónimo de bolsa de trabajo.
+
+Las convocatorias de procesos selectivos de bolsas de empleo o bolsas de trabajo se utilizan para cubrir bajas eventuales: para sustituir temporalmente a un empleado (por ejemplo, por enfermedad), el encargado de contratación puede recurrir a las bolsas de empleo. Es decir, se utilizan en convocatorias de procesos selectivos ""extraordinarios"".
+
+Es decir, no es para convocatorias de procesos selectivos de plazas de funcionario sino para personal laboral.
+
+Lo contrario ocurre en las litas de espera que son los listados que provienen de las convocatorias de procesos selectivos de personal funcionario.
+
+Por tanto, son disjuntos bolsa de empleo y lista de espera. y, por, las bolsas de trabajo son un tipo de convocatoria mientras que las listas de espera (ordinarias) son las que resultan de personas que han aprobado la convocatoria pero se han cubierto las plazas o que no la han aprobado pero al presentarse entran ambas a formar parte de la lista de espera (ordinaria).
+"
+C5,Candidata,,La persona que cumple con los establecido en las bases para presentarse a la convocatoria de empleo público y se apunta a la convocatoria a través de una solicitud,https://www.campustraining.es/noticias/diferencia-oferta-empleo-publico-convocatoria/,
+C6,Categoría profesional,Categoría laboral,"Las convocatorias de empleo público anuncian plazas para categorías profesionales. Las categorías corresponden a categorías de personal funcionario adscritas, respectivamente, a los subgrupos A1, A2, C1, C2 y antiguo grupo E.","- https://www.coruna.gal/cmix/es/empleo/tipos-de-empleo/empleo-publico?argIdioma=es
+- https://datos.madrid.es/FWProjects/egob/Catalogo/SectorPublico/Personal/Ficheros/Leyenda_2018.pdf
+- https://sede.madrid.es/FrameWork/generacionPDF/boam8541_2336.pdf?numeroPublicacion=8541&idSeccion=57e32ecf568ee610VgnVCM1000001d4a900aRCRD&nombreFichero=boam8541_2336&cacheKey=36&guid=b76ffc4a216de610VgnVCM1000001d4a900aRCRD&csv=true
+",¿Hay alguna referencia a categorías profesionales unificada o depende de cada administración?
+C7,Convocatoria de empleo público (CEP),"Convocatoria de oposición, convocatoria, convocatoria de proceso selectivo","Pasado un tiempo de haber sido publicada la Oferta de Empleo Público (máximo 3 años), el ayuntamiento procede a la publicación de la convocatoria para una o varias plazas que responden a una o varias OEP.
+
+Los atributos de la Oferta se detallan en la hoja ""oferta"".
+Los atributos de la Convocatoria se detallan en la hoja ""convocatoria"".","Reunión 20201008
+
+https://www.campustraining.es/noticias/diferencia-oferta-empleo-publico-convocatoria/","Puede haber convocatorias de empleo que respondan a OEP de 3 años, es decir, no tiene que ser la convocatoria de 2019 solo la de la OEP de 2019, puede serlo también de las OEP de 2017, 2018 y 2019 si en esos dos años anteriores no se produjeron las convocatorias"
+C8,Cuerpo,Escala,"Clasificación de los puestos de trabajo según el ámbito de la administración.
+
+Los atributos del Cuerpo se detallan en la hoja ""cuerpo""",https://datos.madrid.es/FWProjects/egob/Catalogo/SectorPublico/Personal/Ficheros/Leyenda_2018.pdf,
+C9,Disposición,,"El término disposición es utilizado, en su significado más general como sinónimo de norma. Sin embargo, en el lenguaje jurídico también se utiliza con un sentido más estricto, para designar uno de los enunciados lingüísticos en el sentido en el cual se articula el texto de un acto jurídico (que en la actualidad los ordenamientos son generalmente por escrito). Las disposiciones que no coinciden necesariamente con partes del texto normativo como los artículos o párrafos.","- https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm
+- https://es.wikipedia.org/wiki/Disposici%C3%B3n_(derecho)",Aparece en los resultados de administracion.gob.es y se entiende como cada una de sus publicaciones 
+C10,Empleado Público,,"Son empleados públicos quienes desempeñan funciones retribuidas en las AAPP al servicio de los intereses generales. 
+- Funcionarios, por norma general
+- Personal laboral
+- Personal eventual
+- Personal directivo profesional","RDL 5/2015, artículo 8. https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719","No todos los empleos públicos corresponden a la figura del funcionario de carrera. Hay puestos que se cubren con otras categorías como son:
+-  Personal Interino: trabajadores que prestan servicios a organismos y administraciones públicas de forma temporal. Ocupan transitoriamente plazas destinadas a los funcionarios de carrera o sustituyen provisionalmente a un funcionario que goza de reserva de plaza y destino.
+- Personal Laboral: ligados mediante un contrato laboral para realizar un servicio de los retribuidos por cualquier Administración Pública. Dependiendo de las necesidades pueden ser fijos, indefinidos o temporales como cualquier trabajador de una empresa privada.
+- Personal Eventual: los conocidos como cargos de confianza. Se nombran en régimen no permanente por una decisión libre del responsable que tenga esa atribución. Su puesto de trabajo es un destino de los no reservados para funcionarios.
+"
+C11,Empleo,,La acción de emplear,https://dle.rae.es/empleo,
+C12,Empleo público,,Relación laboral en la que el Estado es el empleador. En todos los países el Estado es el empleador más importante.,https://es.wikipedia.org/wiki/Empleo_p%C3%BAblico,"La frase ""En todos los paises...."" no es parte de la deifnición"
+C13,Escala profesional,,"El tipo de escala profesional. Para modelar la taxonomía se tiene en cuenta SKOS, un estándar para definir la estructura de los conceptos a representar y los valores que pueden tomar los tipos de escalas profesionales de referencia.",https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico,"¿Es distinto de los grupos profesionales? Sí, los grupos profesionales son A-E mientras que la escala profesional son las categorías profesionales."
+C14,Especialidad,,Especialidad,https://sede.madrid.es/FrameWork/generacionPDF/boam8541_2336.pdf?numeroPublicacion=8541&idSeccion=57e32ecf568ee610VgnVCM1000001d4a900aRCRD&nombreFichero=boam8541_2336&cacheKey=36&guid=b76ffc4a216de610VgnVCM1000001d4a900aRCRD&csv=true,¿Hay alguna referencia a especialidades unificada o depende de cada administración?
+C15,Estado,Situación,Estado del plazo de presentación de solicitudes de la CEP,https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico,"Planteamos al principio el estado de la convocatoria así:
+- abierta o cerrada
+- O bien como en la Diputación de Palencia: adjudicada, en plazo o abierta: https://www.diputaciondepalencia.es/servicios/empleo
+- En el caso del ayto. de Madrid añaden conceptos https://www.madrid.es/portales/munimadrid/es/Inicio/Educacion-y-empleo/Empleo/Oposiciones-y-bolsas-de-trabajo/Oposiciones-por-categorias/Turno-libre/Turno-Libre/?vgnextfmt=default&vgnextoid=89c7ca6a9ccab610VgnVCM1000001d4a900aRCRD&vgnextchannel=f149d207fd6a9610VgnVCM1000001d4a900aRCRD
+
+Después de la reunión del 8/10/2020 convenimos que se trata del estado del plazo de presentación de solicitudes para formar parte de la convocatoria, por lo que determinamos sus estados como Abierto o Cerrado.
+
+Dejamos la pestaña de Estado CEP como parte del debate realizado."
+C16,Expediente,"Número de expediente, Referencia, Identificador",Expediente de la oferta,https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico,"En este caso, 119485/2019. ¿Expediente de la oferta y/o de la convocatoria?"
+C17,Funcionario,Personal funcionario,"El funcionario es el trabajador de la administración pública por excelencia. Se pueden clasificar en:
+- Funcionario de carrera.
+- Funcionario interino
+ - FIN, Funcionario interino en plaza vacante
+ - FIB, funcionario interino por sustitución
+ - FIC, funcionario interino por programa
+ - FID, funcionario interino por acumulación de tareas
+Se detalla en la hoja ""funcionarios""","- RDL 5/2015
+- Ayto. Zaragoza","Es disjunto de personal laboral, de personal eventual y de personal directivo profesional"
+C18,Grupo profesional,,"Grupo de clasificación profesional: A, B, C, D, E y algunos subgrupos. 
+Se detalla en la hoja ""grupos-profesionales""",https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico#2ClaseOfertadeempleo,
+C19,Lista de espera,"Lista de espera ordinaria, Listaxe de agarda, lista de contratación cerrada, listados de contratación","Son las listas de espera resultantes de las convocatorias de procesos selectivos convocados en ejecución de una Convocatoria de Empleo Público.
+
+Para formar parte de dicha lista de espera es requisito imprescindible que la persona aspirante no haya expresado su renuncia a ello en la casilla correspondiente de la solicitud de admisión al proceso selectivo.
+
+Son aquellas que se forman o bien con las personas que aprobaron las pruebas del proceso selectivo pero que no llegaron a conseguir plaza o con las que no aprobaron pero que se inscriben en la lista al presentarse a las pruebas.
+
+Estas listas suelen llamarse cerradas porque no se pueden inscribir candidatos a posteriori del proceso de la oposición.
+
+Las listas de espera ordinarias tendrán carácter prioritario respecto de las extraordinarias (las bolsas de trabajo o bolsas de empleo) cuando hayan de ofertarse nombramientos como personal funcionario interino o contratos como personal laboral temporal.
+
+Una misma lista de espera se utilizará independientemente de la naturaleza funcionarial o laboral de la plaza que se oferte a las personas candidatas integradas en aquella.
+
+","- Definición: https://www.zaragoza.es/oferta/informacion/generalnopermanente.jsp 
+- Y más: https://www.coruna.gal/cmix/es/empleo/tipos-de-empleo/empleo-publico?argIdioma=es 
+- Ejemplo: https://www.madrid.es/FicherosDatosPersonales/GestionListaEsperaLab/TAQUILLERO.pdf","Convenimos que lista de espera es sinónimo de lista de espera ordinaria.
+
+Lista de espera ordinaria y lista de espera extraordinaria (bolsa de empleo o bolsa de trabajo) son disjuntos"
+C20,Lista de Espera Extraordinaria,Lista de contratación abierta,"Son las listas resultantes de procesos de selección convocados específicamente para la confección de una lista de espera. Cuando no exista una lista de espera ordinaria, esta se encuentre agotada o concurra alguna circunstancia que lo justifique en atención a las funciones o tareas a desarrollar, se procederá a la confección de una lista de espera extraordinaria.
+
+Se puede apuntar cualquier persona que cumpla las condiciones y requisitos que se establecen para el puesto de trabajo. La selección se hace mediante la valoración del curriculum y los méritos alegados (títulos académicos, cursos especializados, experiencia o años trabajados para la administración...). ","- Definición: https://www.zaragoza.es/oferta/informacion/generalnopermanente.jsp 
+- Y más: https://www.coruna.gal/cmix/es/empleo/tipos-de-empleo/empleo-publico?argIdioma=es",
+C21,Modalidad de la convocatoria,Sistemas de selección,"La convocatoria tiene tres posibles modalidades:
+- Oposición
+- Concurso
+- Concurso-oposición
+- Listas de contratación o Listas de trabajo
+Se detalla en la hoja ""modalidad"".","- https://www.coruna.gal/cmix/es/empleo/tipos-de-empleo/empleo-publico?argIdioma=es
+- https://www.campustraining.es/noticias/diferencia-oferta-empleo-publico-convocatoria/",
+C22,Observaciones,,Observaciones a la convocatoria,https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico,
+C23,Oferta de empleo público (OEP),Oferta Pública de Empleo,"Una Oferta de Empleo Público es un documento informativo que emite/publica el ayuntamiento una vez al año donde se expone qué necesidades de recursos humanos se necesitan para realizar el funcionariado, puestos de trabajo agrupados por unidades administrativas.
+
+Se describen los detalles de uno o más trabajos que deben ser cubiertos. Son las plazas que se requieren para esos puestos
+
+Estas ofertas de empleo las aprueba el gobierno del ayuntamiento y son publicadas en los respectivos Diarios o boletines Oficiales: el del propio ayuntamiento, si lo tuviera; el de la provincia, si lo tuviera; el de la CCAA.
+","- Artículo 72 RDL5/2015
+- https://www.campustraining.es/noticias/diferencia-oferta-empleo-publico-convocatoria/
+- https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico#2ClaseOfertadeempleo ","Una vez realizada la Oferta Pública de Empleo, las diferentes administraciones públicas del Estado irán aprobando y publicando las correspondientes bases legales y convocatorias para acceder a las plazas ofertadas.
+https://opositargratis.es/guia-del-opositor/ 
+
+Según recoge el EBEP (Estatuto Básico del Empleado Público), entre una fase y otra pueden transcurrir hasta un máximo de tres años."
+C24,Oposiciones,"Proceso selectivo, pruebas selectivas, conjunto de pruebas selectivas, pruebas","En plural, se entiende en general por el proceso selectivo para acceder a la convocatoria de empleo público.
+
+Conjunto de pruebas selectivas en que los aspirantes a un puesto de trabajo, generalmente en la Administración pública, muestran su competencia, que es juzgada por un tribunal. U. m. en pl. con el mismo significado que en sing. Hizo oposiciones. Ganó las oposiciones.","- UPM
+- https://dle.rae.es/oposici%C3%B3n",
+C25,Organismo convocante,,"Organismo que publica la Oferta de Empleo Público. En este caso, el ayuntamiento como entidad local.",,
+C26,Personal directivo profesional,,"Es  personal  directivo  el  que  desarrolla  funciones  directivas  profesionales  en  las Administraciones  Públicas,  definidas  como  tales  en  las  normas  específicas  de  cada Administración.","RDL 5/2015, artículo 13","Es disjunto de funcionario, de personal laboral y de personal eventual."
+C27,Personal eventual,,"Es  personal  eventual  el  que,  en  virtud  de  nombramiento  y  con  carácter  no permanente,  sólo  realiza  funciones  expresamente  calificadas  como  de  confianza  o asesoramiento  especial,  siendo  retribuido  con  cargo  a  los  créditos  presupuestarios consignados para este fin.","RDL 5/2015, artículo 12","Es disjunto de funcionario, de personal laboral y de personal directivo profesional"
+C28,Personal laboral,Laborales,"Es personal laboral el que en virtud de contrato de trabajo formalizado por escrito, en cualquiera de las modalidades de contratación de personal previstas en la legislación laboral, presta servicios retribuidos por las Administraciones Públicas. En función de la duración del contrato éste podrá ser fijo, por tiempo indefinido o temporal.
+Se detalla en la hoja ""personal-laboral""","RDL 5/2015, artículo 11","Es disjunto de funcionario, de personal eventual y de personal directivo profesional"
+C29,Plaza (de trabajo),,"Plaza (de trabajo) es lo que eres (bombero, auxiliar administrativo, etc.).
+
+Es lo que RRHH del Ayuntamiento detecta que necesita y se publica en la OEP
+
+La convocatoria de empleo recoge la necesidad de esta plaza","- https://www.savia.net/noticias/como-publicar-oferta-de-empleo-publico/
+- UPM",La Oferta de Empleo Público sólo incluye las plazas y no los puestos de trabajo.
+C30,Plazo,Validez del anuncio,"El lugar y el plazo en el que las instancias deben presentarse dependen del órgano que se indique en la convocatoria. Por regla general, son 20 días naturales contados a partir del día siguiente a la fecha de publicación en el Boletín Oficial ",https://opositargratis.es/guia-del-opositor/,https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico
+C31,Requisitos,Titulación,"Detallados en las bases de la convocatoria, indican qué se debe cumplir para poder presentarse a la convocatoria","- UPM
+- administracion.gob.es
+",
+C32,Seguimiento,,"Seguimiento de la convocatoria, en caso de que se publiquen documentos anexos que añadan o corrijan extremos de la misma",https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm,
+C33,Solicitud,Instancia,Normalmente tienes que presentar una solicitud o instancia para apuntarte a la convocatoria,https://opositargratis.es/guia-del-opositor/,
+C34,Subescala,,Dentro de las escalas o grupos profesionales hay subescalas,https://sede.madrid.es/FrameWork/generacionPDF/boam8541_2336.pdf?numeroPublicacion=8541&idSeccion=57e32ecf568ee610VgnVCM1000001d4a900aRCRD&nombreFichero=boam8541_2336&cacheKey=36&guid=b76ffc4a216de610VgnVCM1000001d4a900aRCRD&csv=true,
+C35,Turnos,"Turno de ingreso a la convocatoria, vía","Las convocatorias pueden tener varios turnos de acceso, es decir, personas a las que va dirigido:
+
+- Turno libre: cualquiera que cumpla los requisitos.
+- Promoción interna: para funcionarios.
+- Personas con discapacidad/otras características: reserva de plazas para personas con estas características.
+Se detalla en la hoja ""turnos""","- https://opositargratis.es/guia/que-es-el-turno-libre
+- https://administracion.gob.es 
+- https://www.zaragoza.es/sede/portal/datos-abiertos/vocabularios/empleo-publico",

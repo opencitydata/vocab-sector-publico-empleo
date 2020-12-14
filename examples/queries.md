@@ -108,7 +108,7 @@ FILTER (langMatches(lang(?turnoLabel),"es") )
 }
 ```
 
-# 5. ¿Cuántas plazas totales se han ofertado en las CEP de un periodo concreto?
+## 5. ¿Cuántas plazas totales se han ofertado en las CEP de un periodo concreto?
 
 Pongamos que queremos desde el inicio de 2012.
 
@@ -149,5 +149,64 @@ select ?idCEP ?descripcion ?fechaPub   where {
 ?plazaPorTurno esempleo:turnoPlaza ?turno .
 ?turno skos:prefLabel ?labelTurno .
 FILTER (?fechaPub >= "2020-01-01"^^xsd:date && STR(?labelTurno = "Interno" ))
+} 
+```
+
+## 7 ¿Qué CEP de acceso libre hay abiertas hoy?
+
+
+```
+PREFIX esempleo: <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+select distinct ?idCEP ?descripcion ?fechaPub   where {
+?CEP a esempleo:ConvocatoriaEmpleoPublico .
+?CEP dct:identifier ?idCEP .
+?CEP dct:description ?descripcion .
+?CEP schema:datePublished ?fechaPub .
+?CEP esempleo:estadoPlazo "true"^^xsd:boolean .
+?CEP esempleo:plazaPorTurno ?plazaPorTurno .
+?plazaPorTurno esempleo:turnoPlaza ?turno .
+?turno skos:prefLabel ?labelTurno .
+FILTER (STR(?labelTurno = "Interno" ) && langMatches(lang(?labelTurno),'es'))
+} 
+```
+## 8 ¿Qué CEP para este grupo profesional hay abiertas hoy?
+
+
+```
+PREFIX esempleo: <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+select distinct ?idCEP ?descripcion ?fechaPub   where {
+?CEP a esempleo:ConvocatoriaEmpleoPublico .
+?CEP dct:identifier ?idCEP .
+?CEP dct:description ?descripcion .
+?CEP schema:datePublished ?fechaPub .
+?CEP esempleo:estadoPlazo "true"^^xsd:boolean .
+?CEP esempleo:grupoProfesional ?grupo .
+?grupo skos:prefLabel ?labelGrupo
+FILTER (STR(?labelGrupo = "A1") && langMatches(lang(?labelGrupo),'es'))
+}
+```
+## 9  ¿Qué CEP contienen en su descripción la palabra "arquitecto"?
+
+```
+PREFIX esempleo: <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+select ?idCEP ?descripcion ?fechaPub ?numeroPlazas where {
+?CEP a esempleo:ConvocatoriaEmpleoPublico .
+?CEP dct:identifier ?idCEP .
+?CEP dct:description ?descripcion .
+?CEP schema:datePublished ?fechaPub .
+?CEP esempleo:numeroPlazasConvocadas ?numeroPlazas
+FILTER (CONTAINS(?descripcion,"arquitecto"))
 } 
 ```

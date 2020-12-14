@@ -148,7 +148,7 @@ select ?idCEP ?descripcion ?fechaPub   where {
 ?CEP esempleo:plazaPorTurno ?plazaPorTurno .
 ?plazaPorTurno esempleo:turnoPlaza ?turno .
 ?turno skos:prefLabel ?labelTurno .
-FILTER (?fechaPub >= "2020-01-01"^^xsd:date && STR(?labelTurno = "Interno" ))
+FILTER (?fechaPub >= "2020-01-01"^^xsd:date && STR(?labelTurno) = "Interno" )
 } 
 ```
 
@@ -161,7 +161,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX dct: <http://purl.org/dc/terms/>
 
-select distinct ?idCEP ?descripcion ?fechaPub   where {
+select distinct ?idCEP ?labelTurno ?fechaPub   where {
 ?CEP a esempleo:ConvocatoriaEmpleoPublico .
 ?CEP dct:identifier ?idCEP .
 ?CEP dct:description ?descripcion .
@@ -170,10 +170,10 @@ select distinct ?idCEP ?descripcion ?fechaPub   where {
 ?CEP esempleo:plazaPorTurno ?plazaPorTurno .
 ?plazaPorTurno esempleo:turnoPlaza ?turno .
 ?turno skos:prefLabel ?labelTurno .
-FILTER (STR(?labelTurno = "Interno" ) && langMatches(lang(?labelTurno),'es'))
-} 
+FILTER (STR(?labelTurno) = "Libre")
+}
 ```
-## 8 ¿Qué CEP para este grupo profesional hay abiertas hoy?
+## 8 ¿Qué CEP para este grupo profesional A1 hay abiertas hoy?
 
 
 ```
@@ -182,7 +182,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX dct: <http://purl.org/dc/terms/>
 
-select distinct ?idCEP ?descripcion ?fechaPub   where {
+select distinct ?idCEP ?descripcion ?fechaPub ?labelGrupo   where {
 ?CEP a esempleo:ConvocatoriaEmpleoPublico .
 ?CEP dct:identifier ?idCEP .
 ?CEP dct:description ?descripcion .
@@ -190,7 +190,7 @@ select distinct ?idCEP ?descripcion ?fechaPub   where {
 ?CEP esempleo:estadoPlazo "true"^^xsd:boolean .
 ?CEP esempleo:grupoProfesional ?grupo .
 ?grupo skos:prefLabel ?labelGrupo
-FILTER (STR(?labelGrupo = "A1") && langMatches(lang(?labelGrupo),'es'))
+FILTER (?labelGrupo = "A1"@es)
 }
 ```
 ## 9  ¿Qué CEP contienen en su descripción la palabra "arquitecto"?

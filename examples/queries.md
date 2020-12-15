@@ -78,7 +78,7 @@ select  ?descripcion ?fechaPub ?numeroPlazas ?plazo ?pubLabel ?grupLabel ?OEPTit
 ?CEP esempleo:plazaPorTurno ?plazaPorTurno .
 ?plazaPorTurno esempleo:turnoPlaza ?turno .
 ?turno skos:prefLabel ?turnoLabel .
-?plazaPorTurno esempleo:plazasxturno ?plazasPorTurno .
+?plazaPorTurno esempleo:plazasPorTurno ?plazasPorTurno .
 FILTER (langMatches(lang(?pubLabel),"es") && langMatches(lang(?grupLabel),"es") && langMatches(lang(?turnoLabel),"es") )
 } 
 ```
@@ -103,7 +103,7 @@ select  ?descripcion ?turnoLabel ?plazasPorTurno
 ?CEP esempleo:plazaPorTurno ?plazaPorTurno .
 ?plazaPorTurno esempleo:turnoPlaza ?turno .
 ?turno skos:prefLabel ?turnoLabel .
-?plazaPorTurno esempleo:plazasxturno ?plazasPorTurno .
+?plazaPorTurno esempleo:plazasPorTurno ?plazasPorTurno .
 FILTER (langMatches(lang(?turnoLabel),"es") )
 }
 ```

@@ -95,7 +95,7 @@ dct:title &quot;Comunidad de Madrid&quot;^^xsd:string .
     <ul>
       <li>La Convocatoria puede relacionarse con una o varias Ofertas de Empleo Público <code>esempleo:OfertaEmpleoPublico</code> de donde salen las plazas para esta convocatoria a través de la propiedad <code>esempleo:plazasOEP</code>.</li>
       <li>La Convocatoria se publica en uno o varios boletines oficiales a través de <code>esempleo:sePublicaEn</code>.</li>
-      <li>Para saber el número de plazas por turno, a través de <code>esempleo:plazasxturno</code> con <code>esempleo:PlazaPorTurno</code>.</li>
+      <li>Para saber el número de plazas por turno, a través de <code>esempleo:plazasPorTurno</code> con <code>esempleo:PlazaPorTurno</code>.</li>
       <li>Se conoce el grupo profesional a través de <code>esempleo:grupoProfesional</code> con la taxonomía de <code>grupo-profesional</code>.</li>
       <li>Qué tipo de empleado público a través de <code>esempleo:empleadoPublico</code> con la taxonomía de <code>empleado-publico</code>.</li>
       <li>Qué tipo de cuerpo/escala a través de <code>esempleo:cuerpo</code> con la taxonomía de <code>cuerpo</code>.</li>
@@ -178,12 +178,12 @@ dct:title &quot;Comunidad de Madrid&quot;^^xsd:string .
 
     <h4>3.1.5 Plaza Por Turno<span class="backlink" > volver al <a href="#toc">&iacute;ndice</a></span></h4>
 
-<p>Cada instancia de <code>esempleo:PlazaPorTurno</code> indica cuántas plazas hay de ese tipo de turno por la propiedad <code>esempleo:plazasxturno</code> y el tipo de turno se identifica con la relación <code>esempleo:turnoPlaza</code> con la taxonomía de turno <code>http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno</code>.</p>
+<p>Cada instancia de <code>esempleo:PlazaPorTurno</code> indica cuántas plazas hay de ese tipo de turno por la propiedad <code>esempleo:plazasPorTurno</code> y el tipo de turno se identifica con la relación <code>esempleo:turnoPlaza</code> con la taxonomía de turno <code>http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno</code>.</p>
 
 <pre>
   <code>
     &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/empleo/plaza-por-turno/188647-libre:gt; a esempleo:PlazaPorTurno ;
-    esempleo:plazasxturno &quot;3&quot;^^xsd:integer ;
+    esempleo:plazasPorTurno &quot;3&quot;^^xsd:integer ;
     esempleo:turnoPlaza &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno/libre&gt; .
     </code>
 </pre>

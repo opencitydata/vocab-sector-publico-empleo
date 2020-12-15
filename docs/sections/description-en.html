@@ -95,7 +95,7 @@ dct:title &quot;Comunidad de Madrid&quot;^^xsd:string .
     <ul>
       <li>The CEP can be related to one or more OEP <code>esempleo:OfertaEmpleoPublico</code> from which the vacant seats for this call through the property <code>esempleo:plazasOEP</code>.</li>
       <li>The call is published in one or more official gazettes <code>esempleo:BoletinOficial</code> through the property <code>esempleo:sePublicaEn</code>.</li>
-      <li>The number of job vacancies per shift is established with <code>esempleo:PlazaPorTurno</code> through the property <code>esempleo:plazasxturno</code>.</li>
+      <li>The number of job vacancies per shift is established with <code>esempleo:PlazaPorTurno</code> through the property <code>esempleo:plazasPorTurno</code>.</li>
       <li>The professional group is known through the property <code>esempleo:grupoProfesional</code> that establishes the relationship with the taxonomy <code>grupo-profesional</code>.</li>
       <li>The type of public employeer is know through the property <code>esempleo:empleadoPublico</code> that establishes the relationship with the taxonomy <code>empleado-publico</code>.</li>
       <li>The type of body or scale is established through the property <code>esempleo:cuerpo</code> with the taxonomy <code>cuerpo</code>.</li>
@@ -178,12 +178,12 @@ dct:title &quot;Comunidad de Madrid&quot;^^xsd:string .
 
     <h4>3.1.5 Job Vacancy per Shift<span class="backlink" > back to <a href="#toc">index</a></span></h4>
 
-<p>Each instance of <code>esempleo:PlazaPorTurno</code> points out how many job vacancy per shift there are for every type of shift with the property <code>esempleo:plazasxturno</code> and the type of shift is established through the relation <code>esempleo:turnoPlaza</code> with the taxonomy of shift <code>http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno</code>.</p>
+<p>Each instance of <code>esempleo:PlazaPorTurno</code> points out how many job vacancy per shift there are for every type of shift with the property <code>esempleo:plazasPorTurno</code> and the type of shift is established through the relation <code>esempleo:turnoPlaza</code> with the taxonomy of shift <code>http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno</code>.</p>
 
 <pre>
   <code>
     &lt;http://vocab.ciudadesabiertas.es/recurso/sector-publico/empleo/plaza-por-turno/188647-libre:gt; a esempleo:PlazaPorTurno ;
-    esempleo:plazasxturno &quot;3&quot;^^xsd:integer ;
+    esempleo:plazasPorTurno &quot;3&quot;^^xsd:integer ;
     esempleo:turnoPlaza &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno/libre&gt; .
     </code>
 </pre>

@@ -11,7 +11,7 @@ La convocatoria facilita información breve en sus bases y se indica la apertura
 El material generado en las diferentes actividades ejecutadas durante el desarrollo del vocabulario, casos de uso, historias de usuario, glosario de términos, etc., se encuentra disponible en la [Wiki del Vocabulario](https://github.com/CiudadesAbiertas/vocab-sector-publico-empleo/wiki)
 
 ## Mantenimiento
-Para gestionar aquellas incidencias o mejoras sugeridas con respecto al vocabulario te recomendamos seguir las guías proporcionadas en [Gestión de Issues](https://github.com/CiudadesAbiertas/vocab-sector-publico-empleo/wiki/Gesti%C3%B3n-de-issues)
+Para gestionar aquellas incidencias o mejoras sugeridas con respecto al vocabulario te recomendamos seguir las guías proporcionadas en [Gestión de Issues](https://github.com/CiudadesAbiertas/vocab-sector-publico-empleo/wiki/Gestion-de-issues)
 
 ## Ejemplos
 Algunas [consultas](https://github.com/CiudadesAbiertas/vocab-sector-publico-empleo/blob/master/examples/queries.md) a realizar en un SPARQL endpoint de pruebas se han habilitado para ejemplificar su funcionamiento.

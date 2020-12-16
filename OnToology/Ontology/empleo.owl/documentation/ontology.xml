@@ -122,9 +122,7 @@
     <!-- http://purl.org/dc/terms/created -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:domain rdf:resource="http://purl.org/dc/terms/creator"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -140,6 +138,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:AnnotationProperty>
     
 
@@ -412,7 +411,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia">
-        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia"/>
         <rdfs:comment xml:lang="en">Autonomous Area, Autonomous Community or Autonomous to which the geographic accident or administrative entity belongs</rdfs:comment>
         <rdfs:comment xml:lang="es">Autonomía (Comunidad Autónoma o Ciudad Autónoma) a la que pertenece un fenómeno geográfico o una entidad administrativa.</rdfs:comment>
@@ -427,7 +425,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio">
-        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"/>
         <rdfs:comment xml:lang="en">Municipality to which the geographic accident or the administrative entity belongs</rdfs:comment>
         <rdfs:comment xml:lang="es">Municipio al que pertenece un fenómeno geográfico o una entidad administrativa.</rdfs:comment>
@@ -441,20 +438,12 @@
 
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia">
-        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia"/>
         <rdfs:comment xml:lang="en">Province to which the geographic accident or the administrative entity belongs</rdfs:comment>
         <rdfs:comment xml:lang="es">Provincia a la que pertenece un fenómeno geográfico o una entidad administrativa</rdfs:comment>
         <rdfs:label xml:lang="en">belongs to the province</rdfs:label>
         <rdfs:label xml:lang="es">pertenece a la provincia</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.opengis.net/ont/geosparql#sfWithin -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfWithin"/>
     
 
 
@@ -489,15 +478,6 @@
 
 
     <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/ontology#id_local">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://data.europa.eu/eli/ontology#Format"/>
-                    <rdf:Description rdf:about="http://data.europa.eu/eli/ontology#LegalExpression"/>
-                    <rdf:Description rdf:about="http://data.europa.eu/eli/ontology#LegalResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:unionOf rdf:parseType="Collection">
@@ -507,17 +487,12 @@
             </rdfs:Datatype>
         </rdfs:range>
         <specificPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rdfs:comment xml:lang="es">El identificador único que se usa como una referencia en el sistema local para mantener la compatibilidad hacia atrás. Por ejemplo el CELEX a nivel de la UE o el NOR en Francia.</rdfs:comment>
         <rdfs:comment xml:lang="en">The unique identifier used in a local reference system to maintain backwards compatibility. For examples the CELEX at EU level, or the NOR in France.</rdfs:comment>
+        <rdfs:label xml:lang="es">ID de ELI</rdfs:label>
         <rdfs:label xml:lang="en">local id</rdfs:label>
         <owl:versionInfo>created in v1.0</owl:versionInfo>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/created -->
-
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -549,6 +524,27 @@
     
 
 
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una denominación dada al recurso.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:label xml:lang="es">Título</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://schema.org/abstract -->
 
 
@@ -560,6 +556,34 @@
         <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
         <rdfs:label xml:lang="en">Abstract</rdfs:label>
         <rdfs:label xml:lang="es">Resumen</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/alternateName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/alternateName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Alternate name, alias or popular name of some Thing.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Nombre alternativo, popular o por el que se conoce a algo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+        <rdfs:label xml:lang="es">Alternate Name</rdfs:label>
+        <rdfs:label xml:lang="en">Nombre alternativo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/dateModified -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/dateModified">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="es">La última fecha en la que el trabajo creativo se ha modificado o cuando la fecha del archivo se ha actualizado por un alimentador de datos.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date on which the CreativeWork was most recently modified or when the item&apos;s entry was modified within a DataFeed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+        <rdfs:label xml:lang="en">date of modification</rdfs:label>
+        <rdfs:label xml:lang="es">fecha de modificación</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -578,6 +602,20 @@
     
 
 
+    <!-- http://schema.org/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">El nombre de una entidad.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The name of the item.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+        <rdfs:label xml:lang="es">Nombre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://schema.org/url -->
 
 
@@ -586,8 +624,8 @@
         <rdfs:comment xml:lang="en">Dirección URL pública donde puedes obtener información de la entidad</rdfs:comment>
         <rdfs:comment xml:lang="es">Public URL where you can get some information from the entity</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
-        <rdfs:label xml:lang="en">URL</rdfs:label>
-        <rdfs:label xml:lang="es">URL</rdfs:label>
+        <rdfs:label xml:lang="en">Public URL</rdfs:label>
+        <rdfs:label xml:lang="es">URL Pública</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -597,12 +635,27 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Bases de la convocatoria de empleo público</rdfs:comment>
+        <rdfs:comment xml:lang="en">Rules of the call for public employment</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
         <rdfs:label xml:lang="es">Bases</rdfs:label>
+        <rdfs:label xml:lang="en">Rules</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="es">URL de las bases de la convocatoria de empleo público</rdfs:comment>
+        <rdfs:comment xml:lang="en">URL of the rules of the call for public employment.</rdfs:comment>
+        <rdfs:domain></rdfs:domain>
+        <rdfs:label xml:lang="en">Rules URL</rdfs:label>
+        <rdfs:label xml:lang="es">URL de las bases</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -613,11 +666,11 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="es">Disposiciones legales</rdfs:comment>
+        <rdfs:comment xml:lang="en">Legal provisions</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
-        <rdfs:label xml:lang="es">Disposiciones</rdfs:label>
+        <rdfs:label xml:lang="es">Disposiciones legales de una convocatoria de empleo público.</rdfs:label>
+        <rdfs:label xml:lang="en">Legal provisions of a public call for employment.</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -628,11 +681,11 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Deadline status</rdfs:comment>
+        <rdfs:comment xml:lang="es">Estado del plazo</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
-        <rdfs:label xml:lang="es">Estado del Plazo</rdfs:label>
+        <rdfs:label xml:lang="es">Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público.</rdfs:label>
+        <rdfs:label xml:lang="en">Status of the deadline for the submission of applications for the call for public employment.</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -642,12 +695,12 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="_:genid2147483671"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es">duda de si eli:datePublication es suficiente</rdfs:comment>
-        <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
-        <rdfs:label xml:lang="es">Fecha de aprobación</rdfs:label>
+        <rdfs:comment xml:lang="en">Date of Approval</rdfs:comment>
+        <rdfs:comment xml:lang="es">Fecha de aprobación</rdfs:comment>
+        <rdfs:label xml:lang="en">Date of Approval of the Call or the Offer of public employment.</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha de aprobación de la convocatoria o de la oferta de empleo público</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -658,10 +711,10 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es">duda de si eli:first_day_of_entry_into_force es suficiente</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date of resolution of the call</rdfs:comment>
+        <rdfs:comment xml:lang="es">Fecha de resolución de la convocatoria</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="en">Date of Decision</rdfs:label>
         <rdfs:label xml:lang="es">Fecha de resolución</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -673,11 +726,11 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Registration Form URL for the call for public employment.</rdfs:comment>
+        <rdfs:comment xml:lang="es">URL del formulario de inscripción a la convocatoria de empleo público.</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
         <rdfs:label xml:lang="es">Formulario de inscripción</rdfs:label>
+        <rdfs:label xml:lang="en">Registration Form</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -688,26 +741,11 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Call for an extraordinary waiting list</rdfs:comment>
+        <rdfs:comment xml:lang="es">Convocatoria para una lista de espera extraordinaria</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="en">Extraordinary Waiting List</rdfs:label>
         <rdfs:label xml:lang="es">Lista de Espera Extraordinaria</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numero -->
-
-
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numero">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es">Quizás algo de eli lo sustituya</rdfs:comment>
-        <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
-        <rdfs:label xml:lang="es">Número</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -718,11 +756,11 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Number of vacancies</rdfs:comment>
+        <rdfs:comment xml:lang="es">Número de plazas convocadas</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
-        <rdfs:label xml:lang="es">Número de plazas convocadas</rdfs:label>
+        <rdfs:label xml:lang="es">Plazas</rdfs:label>
+        <rdfs:label xml:lang="en">Vacancies</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -733,11 +771,41 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Comments on the public employment call.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Observaciones a la convocatoria de empleo público</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="en">Comments</rdfs:label>
         <rdfs:label xml:lang="es">Observaciones</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="es">Número de plazas totales de la convocatoria de empleo público.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Total number of places in the public employment call.</rdfs:comment>
+        <rdfs:domain></rdfs:domain>
+        <rdfs:label xml:lang="en">Number of places</rdfs:label>
+        <rdfs:label xml:lang="es">Número de plazas</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Number of places for a certain shift in the public employment call.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Número de plazas para un turno determinado de la convocatoria de empleo público.</rdfs:comment>
+        <rdfs:domain></rdfs:domain>
+        <rdfs:label xml:lang="en">Places per shift</rdfs:label>
+        <rdfs:label xml:lang="es">Plazas por turno</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -748,10 +816,10 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="es">Pruebas selectivas para la convocatoria de empleo público.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Selective tests for the call for public employment.</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="en">Comments</rdfs:label>
         <rdfs:label xml:lang="es">Pruebas</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -763,10 +831,10 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <rdfs:comment xml:lang="en">Requirements</rdfs:comment>
+        <rdfs:comment xml:lang="es">Requisitos</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en"></rdfs:label>
+        <rdfs:label xml:lang="en">Requirements of the </rdfs:label>
         <rdfs:label xml:lang="es">Requisitos</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -784,24 +852,10 @@
     
 
 
-    <!-- http://data.europa.eu/eli/ontology#Format -->
+    <!-- _:genid2147483671 -->
 
 
-    <owl:Class rdf:about="http://data.europa.eu/eli/ontology#Format"/>
-    
-
-
-    <!-- http://data.europa.eu/eli/ontology#LegalExpression -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalExpression"/>
-    
-
-
-    <!-- http://data.europa.eu/eli/ontology#LegalResource -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResource"/>
+    <owl:Class rdf:about="_:genid2147483671"/>
     
 
 
@@ -809,7 +863,6 @@
 
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/AdministrativeRegion">
-        <owl:equivalentClass rdf:resource="http://schema.org/AdministrativeArea"/>
         <rdfs:label xml:lang="en">Administrative Region</rdfs:label>
         <rdfs:label xml:lang="es">Región administrativa</rdfs:label>
     </owl:Class>
@@ -849,13 +902,6 @@
     
 
 
-    <!-- http://schema.org/AdministrativeArea -->
-
-
-    <owl:Class rdf:about="http://schema.org/AdministrativeArea"/>
-    
-
-
     <!-- http://schema.org/CreativeWork -->
 
 
@@ -884,7 +930,6 @@
 
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial">
-        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#Format"/>
         <rdfs:comment xml:lang="es">Boletín oficial de la autoridad administrativa</rdfs:comment>
         <rdfs:comment xml:lang="en">Official Gazette of the administrative authority </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo"/>
@@ -898,7 +943,6 @@
 
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">
-        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
         <rdfs:comment xml:lang="es">Convocatoria de Empleo Público para cubrir plazas que provienen de la Oferta de Empleo Público</rdfs:comment>
         <rdfs:comment xml:lang="en">Public Employment Call that comes from Public Employment Announcement</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo"/>
@@ -912,7 +956,6 @@
 
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico">
-        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalExpression"/>
         <rdfs:comment xml:lang="es">Oferta de Empleo Público que realiza la administración para cubrir plazas según las necesidades</rdfs:comment>
         <rdfs:comment xml:lang="en">Public Employment Announcement made by the administration to cover positions according to their needs</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo"/>
@@ -967,9 +1010,7 @@
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Municipality"/>
         <terms:issued>2014-03-28</terms:issued>
-        <rdfs:comment xml:lang="es">
-	Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do
-      </rdfs:comment>
+        <rdfs:comment xml:lang="es">Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do     </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
         <rdfs:label xml:lang="es">Municipio</rdfs:label>
     </owl:Class>
@@ -1100,18 +1141,15 @@
      -->
 
 
-    <rdf:Description rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Fecha de creación del recurso.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="es">Creado</rdfs:label>
-        <rdfs:label xml:lang="en">Created</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La práctica recomendada es describir la fecha, fecha/hora o periodo de tiempo como se expresa en la propiedad date, de la cual es una subpropiedad.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha de emisión</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 

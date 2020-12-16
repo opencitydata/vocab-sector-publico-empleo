@@ -1,0 +1,264 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://schema.org/abstract",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "specificPropertyOf" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#specificPropertyOf"
+    },
+    "pruebas" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "url" : {
+      "@id" : "http://schema.org/url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "grupoProfesional" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "dateModified" : {
+      "@id" : "http://schema.org/dateModified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fechaAprobacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "estadoPlazo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "requisitos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "autonomia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "BoletinOficial" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "plazasCEP" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP",
+      "@type" : "@id"
+    },
+    "Provincia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia"
+    },
+    "Autonomia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia"
+    },
+    "Municipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"
+    },
+    "Province" : {
+      "@id" : "http://dbpedia.org/ontology/Province"
+    },
+    "provincia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia",
+      "@type" : "@id"
+    },
+    "AdministrativeRegion" : {
+      "@id" : "http://dbpedia.org/ontology/AdministrativeRegion"
+    },
+    "plazas" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "basesURL" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "GovernmentalAdministrativeRegion" : {
+      "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
+    },
+    "modalidad" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "bases" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "name" : {
+      "@id" : "http://schema.org/name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "plazasOEP" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP",
+      "@type" : "@id"
+    },
+    "numeroPlazasConvocadas" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "CreativeWork" : {
+      "@id" : "http://schema.org/CreativeWork"
+    },
+    "PlazaPorTurno" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "Error1" : {
+      "@id" : "http://org.semanticweb.owlapi/error#Error1"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "disposiciones" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain"
+    },
+    "id_local" : {
+      "@id" : "http://data.europa.eu/eli/ontology#id_local"
+    },
+    "ComunidadAutonoma" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "plazaPorTurno" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno",
+      "@type" : "@id"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "plazasPorTurno" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "DigitalDocument" : {
+      "@id" : "http://schema.org/DigitalDocument"
+    },
+    "empleadoPublico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico",
+      "@type" : "@id"
+    },
+    "datePublished" : {
+      "@id" : "http://schema.org/datePublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Municipality" : {
+      "@id" : "http://dbpedia.org/ontology/Municipality"
+    },
+    "observaciones" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sePublica" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica",
+      "@type" : "@id"
+    },
+    "listaEsperaExtraordinaria" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "cuerpo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo",
+      "@type" : "@id"
+    },
+    "OfertaEmpleoPublico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "fechaResolucion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "turnoPlaza" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza",
+      "@type" : "@id"
+    },
+    "alternateName" : {
+      "@id" : "http://schema.org/alternateName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "formularioInscripcion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "ConvocatoriaEmpleoPublico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+    },
+    "municipio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio",
+      "@type" : "@id"
+    }
+  }
+}

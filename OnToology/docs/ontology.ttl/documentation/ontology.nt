@@ -1,0 +1,744 @@
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo/1.0.0> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/abstract> "Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.\n\tEl vocabulario de Empleo trabaja sobre la base del buscador de convocatorias de empleo público del portal de la administración general https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/abstract> "This vocabulary has been developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Business launched through the Public Business Entity Red.es assigned to the State Secretariat for Digital Advancement of that ministry.\n\tThe Employment vocabulary works on the basis of the search engine for public employment calls of the general administration portal https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "Red.es"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/contributor> "Víctor Morlán Pío - Ayuntamiento de Zaragoza"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/creator> "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/creator> "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/description> "Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/description> "This vocabulary is being developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre la oferta pública de empleo"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/elements/1.1/title> "Vocabulary for the representation of data on public employment offer."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/created> "2020-10-14"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/hasVersion> "1.0.0" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/issued> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/vocab/vann/preferredNamespacePrefix> "esempleo" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://www.w3.org/2000/01/rdf-schema#comment> "Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://www.w3.org/2000/01/rdf-schema#comment> "This vocabulary has been developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://www.w3.org/2002/07/owl#versionInfo> "This is the initial version of the Employment ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> <http://www.w3.org/2002/07/owl#versionInfo> "Versión 1.0 de la ontología de Empleo que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#specificPropertyOf
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#specificPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo> <http://www.w3.org/2000/01/rdf-schema#comment> "Cuerpo o escala de la administración pública: general, especial, general o especial, habilitado de carácter nacional, general o habilitado de carácter nacional"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo> <http://www.w3.org/2000/01/rdf-schema#comment> "Public administration body or scale: general, special, general or special, nationally qualified, general or nationally qualified"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo> <http://www.w3.org/2000/01/rdf-schema#label> "Body or scale"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo> <http://www.w3.org/2000/01/rdf-schema#label> "Cuerpo o escala"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de empleado público: tipo de funcionario y tipo de personal laboral"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of public employee: type of civil servant: subtype of civil servant and subtype of labour force"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico> <http://www.w3.org/2000/01/rdf-schema#label> "Empleado Público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico> <http://www.w3.org/2000/01/rdf-schema#label> "Public employee"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo profesional: A, B, C o E"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional> <http://www.w3.org/2000/01/rdf-schema#comment> "Professional group: A, B, C or E"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo profesional"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional> <http://www.w3.org/2000/01/rdf-schema#label> "Professional group"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Method of announcement: Competition, Contest or Competition-Public entrance examination"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Modalidad de la convocatoria: Oposición, Concurso o Concurso-oposición"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad> <http://www.w3.org/2000/01/rdf-schema#label> "Modalidad"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad> <http://www.w3.org/2000/01/rdf-schema#label> "Modality"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#comment> "Job position corresponding to each shift of presentation: free, stabilization, internal promotion, reserved for some reason"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza que corresponde a cada turno de presentación: libre, estabilización, promoción interna, reservado por algún motivo"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#label> "Job vacancy per shift"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza por turno"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP> <http://www.w3.org/2000/01/rdf-schema#comment> "Job vacancies of Public Employment Offer that go to the Calls for Public Employment"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP> <http://www.w3.org/2000/01/rdf-schema#comment> "Plazas de la Oferta de Empleo Público que se concretan en una Convocatoria de Empleo Público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP> <http://www.w3.org/2000/01/rdf-schema#label> "plazas a CEP"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasCEP> <http://www.w3.org/2000/01/rdf-schema#label> "public job vacancies from "@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP> <http://www.w3.org/2000/01/rdf-schema#comment> "Job vacancies of the Call for Public Employment that come from a Public Employment Offer"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP> <http://www.w3.org/2000/01/rdf-schema#comment> "Plazas de la Convocatoria de Empleo Público que viene de una Oferta de Empleo Público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP> <http://www.w3.org/2000/01/rdf-schema#label> "Public job vacancies from PEO"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP> <http://www.w3.org/2000/01/rdf-schema#label> "plazas de OEP"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica> <http://www.w3.org/2000/01/rdf-schema#comment> "Donde se publica el anuncio realizado por la administración"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica> <http://www.w3.org/2000/01/rdf-schema#comment> "Where the announcement is published"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica> <http://www.w3.org/2000/01/rdf-schema#label> "is published in"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#sePublica> <http://www.w3.org/2000/01/rdf-schema#label> "se publica en"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza> <http://www.w3.org/2000/01/rdf-schema#comment> "Shift of presentation: free, stabilization, internal promotion, reserved for some reason"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza> <http://www.w3.org/2000/01/rdf-schema#comment> "Turno de presentación para una plaza: libre, estabilización, promoción interna, reservado por algún motivo"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza> <http://www.w3.org/2000/01/rdf-schema#label> "Shift of the job vacancy"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza> <http://www.w3.org/2000/01/rdf-schema#label> "Turno de la Plaza"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://www.w3.org/2000/01/rdf-schema#comment> "Autonomous Area, Autonomous Community or Autonomous to which the geographic accident or administrative entity belongs"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://www.w3.org/2000/01/rdf-schema#comment> "Autonomía (Comunidad Autónoma o Ciudad Autónoma) a la que pertenece un fenómeno geográfico o una entidad administrativa."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to the autonomous area"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece a la autonomía"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> <http://www.w3.org/2000/01/rdf-schema#comment> "Municipality to which the geographic accident or the administrative entity belongs"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> <http://www.w3.org/2000/01/rdf-schema#comment> "Municipio al que pertenece un fenómeno geográfico o una entidad administrativa."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to the municipality"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece al municipio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> <http://www.w3.org/2000/01/rdf-schema#comment> "Province to which the geographic accident or the administrative entity belongs"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> <http://www.w3.org/2000/01/rdf-schema#comment> "Provincia a la que pertenece un fenómeno geográfico o una entidad administrativa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to the province"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece a la provincia"@es .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "En taxonomía"@es .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "It is in Scheme"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "Relaciona un recurso, como por ejemplo un concepto, con un esquema de conceptos o taxonomía en el que se incluye."@es .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/eli/ontology#id_local
+<http://data.europa.eu/eli/ontology#id_local> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://data.europa.eu/eli/ontology#id_local> <http://www.w3.org/2000/01/rdf-schema#range> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid21 <http://www.w3.org/2002/07/owl#unionOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://data.europa.eu/eli/ontology#id_local> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#specificPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://data.europa.eu/eli/ontology#id_local> <http://www.w3.org/2000/01/rdf-schema#comment> "El identificador único que se usa como una referencia en el sistema local para mantener la compatibilidad hacia atrás. Por ejemplo el CELEX a nivel de la UE o el NOR en Francia."@es .
+<http://data.europa.eu/eli/ontology#id_local> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier used in a local reference system to maintain backwards compatibility. For examples the CELEX at EU level, or the NOR in France."@en .
+<http://data.europa.eu/eli/ontology#id_local> <http://www.w3.org/2000/01/rdf-schema#label> "ID de ELI"@es .
+<http://data.europa.eu/eli/ontology#id_local> <http://www.w3.org/2000/01/rdf-schema#label> "local id"@en .
+<http://data.europa.eu/eli/ontology#id_local> <http://www.w3.org/2002/07/owl#versionInfo> "created in v1.0" .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the resource within a given context."@en .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "Una descripción del recurso dentro de un contexto dado."@es .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Descripción"@es .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Referencia inequívoca al recurso dentro de un contexto dado."@es .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identificador"@es .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource."@en .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Una denominación dada al recurso."@es .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "Título"@es .
+# 
+# http://schema.org/abstract
+<http://schema.org/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/abstract> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/DigitalDocument> .
+<http://schema.org/abstract> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "Alternate name, alias or popular name of some Thing."@en .
+<http://schema.org/abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre alternativo, popular o por el que se conoce a algo."@es .
+<http://schema.org/abstract> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/abstract> <http://www.w3.org/2000/01/rdf-schema#label> "Abstract"@en .
+<http://schema.org/abstract> <http://www.w3.org/2000/01/rdf-schema#label> "Resumen"@es .
+# 
+# http://schema.org/alternateName
+<http://schema.org/alternateName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/alternateName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/alternateName> <http://www.w3.org/2000/01/rdf-schema#comment> "Alternate name, alias or popular name of some Thing."@en .
+<http://schema.org/alternateName> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre alternativo, popular o por el que se conoce a algo."@es .
+<http://schema.org/alternateName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/alternateName> <http://www.w3.org/2000/01/rdf-schema#label> "Alternate Name"@es .
+<http://schema.org/alternateName> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre alternativo"@en .
+# 
+# http://schema.org/dateModified
+<http://schema.org/dateModified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/dateModified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/dateModified> <http://www.w3.org/2000/01/rdf-schema#comment> "La última fecha en la que el trabajo creativo se ha modificado o cuando la fecha del archivo se ha actualizado por un alimentador de datos."@es .
+<http://schema.org/dateModified> <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed."@en .
+<http://schema.org/dateModified> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/dateModified> <http://www.w3.org/2000/01/rdf-schema#label> "date of modification"@en .
+<http://schema.org/dateModified> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de modificación"@es .
+# 
+# http://schema.org/datePublished
+<http://schema.org/datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha y hora de publicación en formato ISO 8601"@es .
+<http://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "The date and time of publication in ISO 8601 date format"@en .
+<http://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#label> "date of publipublished dateosted incidence date"@en .
+<http://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de publicación"@es .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "El nombre de una entidad."@es .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the item."@en .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "Name"@en .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre"@es .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "Dirección URL pública donde puedes obtener información de la entidad"@en .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#comment> "Public URL where you can get some information from the entity"@es .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "Public URL"@en .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "URL Pública"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases> <http://www.w3.org/2000/01/rdf-schema#comment> "Bases de la convocatoria de empleo público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases> <http://www.w3.org/2000/01/rdf-schema#comment> "Rules of the call for public employment"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases> <http://www.w3.org/2000/01/rdf-schema#label> "Bases"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases> <http://www.w3.org/2000/01/rdf-schema#label> "Rules"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL de las bases de la convocatoria de empleo público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of the rules of the call for public employment."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL> <http://www.w3.org/2000/01/rdf-schema#label> "Rules URL"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL de las bases"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones> <http://www.w3.org/2000/01/rdf-schema#comment> "Disposiciones legales"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal provisions"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones> <http://www.w3.org/2000/01/rdf-schema#label> "Disposiciones legales de una convocatoria de empleo público."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones> <http://www.w3.org/2000/01/rdf-schema#label> "Legal provisions of a public call for employment."@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo> <http://www.w3.org/2000/01/rdf-schema#comment> "Deadline status"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo> <http://www.w3.org/2000/01/rdf-schema#comment> "Estado del plazo"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo> <http://www.w3.org/2000/01/rdf-schema#label> "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo> <http://www.w3.org/2000/01/rdf-schema#label> "Status of the deadline for the submission of applications for the call for public employment."@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://org.semanticweb.owlapi/error#Error1> .
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of Approval"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de aprobación"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#label> "Date of Approval of the Call or the Offer of public employment."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de aprobación de la convocatoria o de la oferta de empleo público"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of resolution of the call"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de resolución de la convocatoria"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion> <http://www.w3.org/2000/01/rdf-schema#label> "Date of Decision"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de resolución"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion> <http://www.w3.org/2000/01/rdf-schema#comment> "Registration Form URL for the call for public employment."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion> <http://www.w3.org/2000/01/rdf-schema#comment> "URL del formulario de inscripción a la convocatoria de empleo público."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion> <http://www.w3.org/2000/01/rdf-schema#label> "Formulario de inscripción"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion> <http://www.w3.org/2000/01/rdf-schema#label> "Registration Form"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Call for an extraordinary waiting list"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocatoria para una lista de espera extraordinaria"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria> <http://www.w3.org/2000/01/rdf-schema#label> "Extraordinary Waiting List"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria> <http://www.w3.org/2000/01/rdf-schema#label> "Lista de Espera Extraordinaria"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of vacancies"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de plazas convocadas"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#label> "Plazas"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#label> "Vacancies"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#comment> "Comments on the public employment call."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#comment> "Observaciones a la convocatoria de empleo público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#label> "Comments"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#label> "Observaciones"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de plazas totales de la convocatoria de empleo público."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#comment> "Total number of places in the public employment call."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#label> "Number of places"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#label> "Número de plazas"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of places for a certain shift in the public employment call."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de plazas para un turno determinado de la convocatoria de empleo público."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#label> "Places per shift"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#label> "Plazas por turno"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/2000/01/rdf-schema#comment> "Pruebas selectivas para la convocatoria de empleo público."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/2000/01/rdf-schema#comment> "Selective tests for the call for public employment."@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/2000/01/rdf-schema#label> "Comments"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/2000/01/rdf-schema#label> "Pruebas"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos> <http://www.w3.org/2000/01/rdf-schema#comment> "Requirements"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos> <http://www.w3.org/2000/01/rdf-schema#comment> "Requisitos"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos> <http://www.w3.org/2000/01/rdf-schema#label> "Requirements of the "@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos> <http://www.w3.org/2000/01/rdf-schema#label> "Requisitos"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/AdministrativeRegion
+<http://dbpedia.org/ontology/AdministrativeRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/AdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative Region"@en .
+<http://dbpedia.org/ontology/AdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Región administrativa"@es .
+# 
+# http://dbpedia.org/ontology/GovernmentalAdministrativeRegion
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/AdministrativeRegion> .
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Governmental Administrative Region"@en .
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#label> "Región administrativa gubernamental"@es .
+# 
+# http://dbpedia.org/ontology/Municipality
+<http://dbpedia.org/ontology/Municipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Municipality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://dbpedia.org/ontology/Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Municipalidad"@es .
+<http://dbpedia.org/ontology/Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Municipality"@en .
+# 
+# http://dbpedia.org/ontology/Province
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#label> "Province"@en .
+<http://dbpedia.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#label> "Provincia"@es .
+# 
+# http://org.semanticweb.owlapi/error#Error1
+# 
+# http://schema.org/CreativeWork
+<http://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/CreativeWork> <http://www.w3.org/2000/01/rdf-schema#comment> "El más genérico tipo de trabajo creativo incluidos libros, películas, fotografías, software, etc."@es .
+<http://schema.org/CreativeWork> <http://www.w3.org/2000/01/rdf-schema#comment> "The most generic kind of creative work, including books, movies, photographs, software programs, etc."@en .
+<http://schema.org/CreativeWork> <http://www.w3.org/2000/01/rdf-schema#label> "Creative Work"@en .
+<http://schema.org/CreativeWork> <http://www.w3.org/2000/01/rdf-schema#label> "Trabajo creativo"@es .
+# 
+# http://schema.org/DigitalDocument
+<http://schema.org/DigitalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "An electronic file or document"@en .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Un archivo o documento electrónico"@es .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Document"@en .
+<http://schema.org/DigitalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Documento digital"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial> <http://www.w3.org/2000/01/rdf-schema#comment> "Boletín oficial de la autoridad administrativa"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial> <http://www.w3.org/2000/01/rdf-schema#comment> "Official Gazette of the administrative authority "@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial> <http://www.w3.org/2000/01/rdf-schema#label> "Boletín Oficial"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial> <http://www.w3.org/2000/01/rdf-schema#label> "Official Gazette"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocatoria de Empleo Público para cubrir plazas que provienen de la Oferta de Empleo Público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#comment> "Public Employment Call that comes from Public Employment Announcement"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#label> "Convocatoria de Empleo Público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#label> "Public Employment Call"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#comment> "Oferta de Empleo Público que realiza la administración para cubrir plazas según las necesidades"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#comment> "Public Employment Announcement made by the administration to cover positions according to their needs"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#label> "Oferta de Empleo Público"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico> <http://www.w3.org/2000/01/rdf-schema#label> "Public Employment Announcement"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza de trabajo por turno o vía de ingreso a la convocatoria"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#comment> "Workplace per shift or way to entry to the call "@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#label> "Plaza por turno"@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno> <http://www.w3.org/2000/01/rdf-schema#label> "Workplace per shift"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://www.w3.org/2000/01/rdf-schema#comment> "Comunidad Autónoma o Ciudad Autónoma"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://www.w3.org/2000/01/rdf-schema#label> "Autonomía"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad territorial que, dentro del ordenamiento constitucional del Estado español, está dotada de autonomía legislativa y competencias ejecutivas, así como de la facultad de administrarse mediante sus propios representantes [fuente: Diccionario de la lengua española (DRAE) 2011]"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#ComunidadAutonoma> <http://www.w3.org/2000/01/rdf-schema#label> "Comunidad Autónoma"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Municipality> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Municipio es el ente local definido en el artículo 140 de la Constitución española y la entidad básica de la organización territorial del Estado según el artículo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines. La delimitación territorial de Municipio está recogida del REgistro Central de Cartografía del IGN. Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do     "@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#label> "Municipio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Province> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#comment> "\n\tCada una de las grandes divisiones de un territorio o Estado, sujeta por lo común a una autoridad administrativa [fuente: Diccionario de la lengua española (DRAE) 2011]\n      "@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad local con personalidad jurídica propia, determinada por la agrupación de Municipios y división territorial para el cumplimiento de las actividades del Estado. La delimitación territorial de Provincia está recogida en el Registro Central de Cartografía del IGN [fuente: Modelo de Direcciones de la Administración General del Estado v.2] Su identificador, que se especifica con la propiedad dct:identifier, es el proporcionado por el INE en http://www.ine.es/daco/daco42/codmun/codmun09/09codmun.xls Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do\n      "@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#label> "Provincia"@es .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://purl.org/dc/terms/issued> "2004-02-xx" .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concepto"@es .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core#definition> "Una idea o noción abstracta; una unidad de pensamiento."@es .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://purl.org/dc/terms/issued> "2004-02-xx" .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept scheme may be defined to include concepts from different sources."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Un esquema de conceptos definido para incluir conceptos de distintas fuentes."@es .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Scheme"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Esquema de conceptos"@es .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2004/02/skos/core#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> <http://www.w3.org/2000/01/rdf-schema#label> "Body or scale"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> <http://www.w3.org/2000/01/rdf-schema#label> "Cuerpo o escala"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> <http://www.w3.org/2000/01/rdf-schema#label> "Empleado público"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> <http://www.w3.org/2000/01/rdf-schema#label> "Public Employee"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo profesional"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional> <http://www.w3.org/2000/01/rdf-schema#label> "Profesional Group"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad> <http://www.w3.org/2000/01/rdf-schema#label> "Modalidad"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad> <http://www.w3.org/2000/01/rdf-schema#label> "Mode"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno> <http://www.w3.org/2000/01/rdf-schema#label> "Entry shift"@en .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno> <http://www.w3.org/2000/01/rdf-schema#label> "Turno de ingreso"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#issued-003> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance (e.g., publication) of the resource."@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "La práctica recomendada es describir la fecha, fecha/hora o periodo de tiempo como se expresa en la propiedad date, de la cual es una subpropiedad."@es .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/"@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Date Issued"@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de emisión"@es .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

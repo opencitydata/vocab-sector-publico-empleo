@@ -460,6 +460,8 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP">Public job vacancies from PEO</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#convocatoriaURL"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#convocatoriaURL">call URL</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#plazos"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos">deadlines</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala"
                title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala">scale</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#especialidad"
@@ -1004,6 +1006,10 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://schema.org/datePublished" title="http://schema.org/datePublished">date of publipublished dateosted incidence date</a>
       </li>
       <li>
+         <a href="#plazos"
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos">deadlines</a>
+      </li>
+      <li>
          <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">Description</a>
       </li>
       <li>
@@ -1292,6 +1298,33 @@ This section provides details for each class and property defined by Vocabulary 
                <a href="http://www.w3.org/2001/XMLSchema#dateTime"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="plazos">
+      <h3>deadlines<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos</p>
+      <div class="comment">
+         <span class="markdown">Description of the deadlines for the public employment call</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Public Employment Call</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>

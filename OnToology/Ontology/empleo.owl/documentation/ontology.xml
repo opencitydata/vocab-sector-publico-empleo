@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:empleo="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo">
-        <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo/1.1.0"/>
         <dc:abstract>Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto &quot;Plataforma de Gobierno Abierto, Colaborativa e Interoperable&quot; de la &quot;II Convocatoria de Ciudades Inteligentes&quot; del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.
 	El vocabulario de Empleo trabaja sobre la base del buscador de convocatorias de empleo público del portal de la administración general https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm</dc:abstract>
         <dc:abstract>This vocabulary has been developed in the context of the action on open data of the project &quot;Platform of Open, Collaborative and Interoperable Government&quot; of the &quot;II Call for Intelligent Cities&quot; of the Ministry of Economy and Business launched through the Public Business Entity Red.es assigned to the State Secretariat for Digital Advancement of that ministry.
@@ -35,9 +35,9 @@
         <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
         <dc:title xml:lang="es">Vocabulario para la representación de datos sobre la oferta pública de empleo</dc:title>
         <dc:title xml:lang="en">Vocabulary for the representation of data on public employment offer.</dc:title>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-14</terms:created>
-        <terms:hasVersion>1.0.0</terms:hasVersion>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-03</terms:issued>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-14T00:00:00</terms:created>
+        <terms:hasVersion>1.1.0</terms:hasVersion>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-23T00:00:00</terms:issued>
         <terms:license>https://creativecommons.org/licenses/by/4.0</terms:license>
         <terms:publisher xml:lang="en">Ontology Engineering Group - Universidad Politécnica de Madrid</terms:publisher>
         <terms:publisher xml:lang="es">Ontology Engineering Group - Universidad Politécnica de Madrid</terms:publisher>
@@ -45,8 +45,11 @@
         <vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#"/>
         <rdfs:comment xml:lang="es">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto &quot;Plataforma de Gobierno Abierto, Colaborativa e Interoperable&quot; de la &quot;II Convocatoria de Ciudades Inteligentes&quot; del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</rdfs:comment>
         <rdfs:comment xml:lang="en">This vocabulary has been developed in the context of the action on open data of the project &quot;Platform of Open, Collaborative and Interoperable Government&quot; of the &quot;II Call for Intelligent Cities&quot; of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry.</rdfs:comment>
-        <owl:versionInfo xml:lang="en">This is the initial version of the Employment ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate.</owl:versionInfo>
-        <owl:versionInfo xml:lang="es">Versión 1.0 de la ontología de Empleo que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
+        <owl:priorVersion xml:lang="en">1.0.1</owl:priorVersion>
+        <owl:versionInfo xml:lang="es">Esta es la versión 1.1 de la ontología de Empleo que resulta de modificaciones a la versión 1.0 relativa a la inclusión de propiedades adicionales requeridas por los ayuntamientos tanto en la oferta de empleo público como de la convocatoria de empleo público. 
+La ontología ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">This is version 1.1 of the Employment ontology that results from modifications to version 1.0 regarding the inclusion of additional properties required by municipalities in both the public employment offer and the public employment call.
+The ontology has been implemented in the context of the project Open, collaborative and interoperable government platform in which the municipalities of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -592,7 +595,7 @@
         <rdfs:comment xml:lang="es">La fecha y hora de publicación en formato ISO 8601</rdfs:comment>
         <rdfs:comment xml:lang="en">The date and time of publication in ISO 8601 date format</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
-        <rdfs:label xml:lang="en">date of publipublished dateosted incidence date</rdfs:label>
+        <rdfs:label xml:lang="en">date published</rdfs:label>
         <rdfs:label xml:lang="es">fecha de publicación</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -631,6 +634,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Bases de la convocatoria de empleo público</rdfs:comment>
         <rdfs:comment xml:lang="en">Rules of the call for public employment</rdfs:comment>
@@ -646,6 +650,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="es">URL de las bases de la convocatoria de empleo público</rdfs:comment>
         <rdfs:comment xml:lang="en">URL of the rules of the call for public employment.</rdfs:comment>
@@ -675,12 +680,13 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="es">Disposiciones legales</rdfs:comment>
-        <rdfs:comment xml:lang="en">Legal provisions</rdfs:comment>
+        <rdfs:comment xml:lang="es">Disposiciones legales de una convocatoria de empleo público.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Legal provisions of a public call for employment.</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="es">Disposiciones legales de una convocatoria de empleo público.</rdfs:label>
-        <rdfs:label xml:lang="en">Legal provisions of a public call for employment.</rdfs:label>
+        <rdfs:label xml:lang="es">Disposiciones legales</rdfs:label>
+        <rdfs:label xml:lang="en">Legal provisions</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -720,10 +726,10 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment xml:lang="en">Date of Approval</rdfs:comment>
-        <rdfs:comment xml:lang="es">Fecha de aprobación</rdfs:comment>
-        <rdfs:label xml:lang="en">Date of Approval of the Call or the Offer of public employment.</rdfs:label>
-        <rdfs:label xml:lang="es">Fecha de aprobación de la convocatoria o de la oferta de empleo público</rdfs:label>
+        <rdfs:comment xml:lang="en">Date of Approval of the Call or the Offer of public employment.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Fecha de aprobación de la convocatoria o de la oferta de empleo público</rdfs:comment>
+        <rdfs:label xml:lang="en">Date of Approval</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha de aprobación</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -733,6 +739,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Date of resolution of the call</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha de resolución de la convocatoria</rdfs:comment>
@@ -748,6 +755,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">Registration Form URL for the call for public employment.</rdfs:comment>
         <rdfs:comment xml:lang="es">URL del formulario de inscripción a la convocatoria de empleo público.</rdfs:comment>
@@ -763,6 +771,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Call for an extraordinary waiting list</rdfs:comment>
         <rdfs:comment xml:lang="es">Convocatoria para una lista de espera extraordinaria</rdfs:comment>
@@ -794,6 +803,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Comments on the public employment call.</rdfs:comment>
         <rdfs:comment xml:lang="es">Observaciones a la convocatoria de empleo público</rdfs:comment>
@@ -809,6 +819,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Number of places for a certain shift in the public employment call.</rdfs:comment>
         <rdfs:comment xml:lang="es">Número de plazas para un turno determinado de la convocatoria de empleo público.</rdfs:comment>
@@ -838,6 +849,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">Pruebas selectivas para la convocatoria de empleo público.</rdfs:comment>
         <rdfs:comment xml:lang="en">Selective tests for the call for public employment.</rdfs:comment>
@@ -854,8 +866,8 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Requirements</rdfs:comment>
-        <rdfs:comment xml:lang="es">Requisitos</rdfs:comment>
+        <rdfs:comment xml:lang="en">Requirements for the public employment call</rdfs:comment>
+        <rdfs:comment xml:lang="es">Requisitos para la oferta de empelo público</rdfs:comment>
         <rdfs:domain></rdfs:domain>
         <rdfs:label xml:lang="en">Requirements of the </rdfs:label>
         <rdfs:label xml:lang="es">Requisitos</rdfs:label>

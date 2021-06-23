@@ -445,7 +445,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "date of publipublished dateosted incidence date"
+    "@value" : "date published"
   }, {
     "@language" : "es",
     "@value" : "fecha de publicación"
@@ -563,14 +563,14 @@
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2020-10-14"
+    "@value" : "2020-10-14T00:00:00"
   } ],
   "http://purl.org/dc/terms/hasVersion" : [ {
-    "@value" : "1.0.0"
+    "@value" : "1.1.0"
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2020-11-03"
+    "@value" : "2020-06-23T00:00:00"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0"
@@ -595,15 +595,19 @@
     "@language" : "en",
     "@value" : "This vocabulary has been developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry."
   } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@language" : "en",
+    "@value" : "1.0.1"
+  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo/1.0.0"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo/1.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "This is the initial version of the Employment ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate."
-  }, {
     "@language" : "es",
-    "@value" : "Versión 1.0 de la ontología de Empleo que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."
+    "@value" : "Esta es la versión 1.1 de la ontología de Empleo que resulta de modificaciones a la versión 1.0 relativa a la inclusión de propiedades adicionales requeridas por los ayuntamientos tanto en la oferta de empleo público como de la convocatoria de empleo público. \nLa ontología ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."
+  }, {
+    "@language" : "en",
+    "@value" : "This is version 1.1 of the Employment ontology that results from modifications to version 1.0 regarding the inclusion of additional properties required by municipalities in both the public employment offer and the public employment call.\nThe ontology has been implemented in the context of the project Open, collaborative and interoperable government platform in which the municipalities of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate."
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#BoletinOficial",
@@ -696,6 +700,8 @@
     "@value" : "Rules of the call for public employment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+  }, {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -722,6 +728,8 @@
     "@value" : "URL of the rules of the call for public employment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+  }, {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -765,20 +773,22 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Disposiciones legales"
-  }, {
-    "@language" : "en",
-    "@value" : "Legal provisions"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
     "@value" : "Disposiciones legales de una convocatoria de empleo público."
   }, {
     "@language" : "en",
     "@value" : "Legal provisions of a public call for employment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+  }, {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Disposiciones legales"
+  }, {
+    "@language" : "en",
+    "@value" : "Legal provisions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -866,17 +876,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Date of Approval"
-  }, {
-    "@language" : "es",
-    "@value" : "Fecha de aprobación"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
     "@value" : "Date of Approval of the Call or the Offer of public employment."
   }, {
     "@language" : "es",
     "@value" : "Fecha de aprobación de la convocatoria o de la oferta de empleo público"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Date of Approval"
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha de aprobación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -895,6 +905,8 @@
     "@value" : "Fecha de resolución de la convocatoria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+  }, {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -921,6 +933,8 @@
     "@value" : "URL del formulario de inscripción a la convocatoria de empleo público."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+  }, {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -973,6 +987,8 @@
     "@value" : "Convocatoria para una lista de espera extraordinaria"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+  }, {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1053,6 +1069,8 @@
     "@value" : "Observaciones a la convocatoria de empleo público"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+  }, {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1157,6 +1175,8 @@
     "@value" : "Número de plazas para un turno determinado de la convocatoria de empleo público."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno"
+  }, {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1206,6 +1226,8 @@
     "@value" : "Selective tests for the call for public employment."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"
+  }, {
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1226,10 +1248,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Requirements"
+    "@value" : "Requirements for the public employment call"
   }, {
     "@language" : "es",
-    "@value" : "Requisitos"
+    "@value" : "Requisitos para la oferta de empelo público"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""

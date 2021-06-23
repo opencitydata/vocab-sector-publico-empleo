@@ -55,6 +55,9 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
     "autonomia" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia",
       "@type" : "@id"

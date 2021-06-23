@@ -194,18 +194,34 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="description">
          <dt>en dominio de</dt>
          <dd>
-            <a href="#empleadoPublico"
+            <a href="#bases"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases">Bases</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#disposiciones"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones">Disposiciones legales</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#empleadoPublico"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico">Empleado Público</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#grupoProfesional"
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#fechaResolucion"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion">Fecha de resolución</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#formularioInscripcion"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion">Formulario de inscripción</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#grupoProfesional"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional">Grupo profesional</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#modalidad"
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#listaEsperaExtraordinaria"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria">Lista de Espera Extraordinaria</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#modalidad"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#modalidad">Modalidad</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#plazaPorTurno"
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#observaciones"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones">Observaciones</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#plazaPorTurno"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazaPorTurno">Plaza por turno</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#numeroPlazasConvocadas"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas">Plazas</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#pruebas"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas">Pruebas</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#convocatoriaURL"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#convocatoriaURL">URL convocatoria</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#basesURL"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL">URL de las bases</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala"
                title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala">escala</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#especialidad"
@@ -392,7 +408,9 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="description">
          <dt>en dominio de</dt>
          <dd>
-            <a href="#turnoPlaza"
+            <a href="#plazasPorTurno"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno">Plazas por turno</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#turnoPlaza"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza">Turno de la Plaza</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
@@ -990,7 +1008,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </li>
       <li>
          <a href="#disposiciones"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones">Disposiciones legales de una convocatoria de empleo público.</a>
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones">Disposiciones legales</a>
       </li>
       <li>
          <a href="#especialidad"
@@ -1002,7 +1020,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </li>
       <li>
          <a href="#fechaAprobacion"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion">Fecha de aprobación de la convocatoria o de la oferta de empleo público</a>
+            title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion">Fecha de aprobación</a>
       </li>
       <li>
          <a href="#http://schema.org/dateModified" title="http://schema.org/dateModified">fecha de modificación</a>
@@ -1119,6 +1137,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Convocatoria de Empleo Público</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>
@@ -1157,14 +1180,14 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </div>
    </div>
    <div class="entity" id="disposiciones">
-      <h3>Disposiciones legales de una convocatoria de empleo público.<sup class="type-dp" title="Propiedad de datos">dp</sup>
+      <h3>Disposiciones legales<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones</p>
       <div class="comment">
-         <span class="markdown">Disposiciones legales</span>
+         <span class="markdown">Disposiciones legales de una convocatoria de empleo público.</span>
       </div>
       <div class="description">
          <dl>
@@ -1175,6 +1198,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Convocatoria de Empleo Público</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>
@@ -1242,14 +1270,14 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </div>
    </div>
    <div class="entity" id="fechaAprobacion">
-      <h3>Fecha de aprobación de la convocatoria o de la oferta de empleo público<sup class="type-dp" title="Propiedad de datos">dp</sup>
+      <h3>Fecha de aprobación<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion</p>
       <div class="comment">
-         <span class="markdown">Fecha de aprobación</span>
+         <span class="markdown">Fecha de aprobación de la convocatoria o de la oferta de empleo público</span>
       </div>
       <div class="description">
          <dl>
@@ -1341,6 +1369,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Convocatoria de Empleo Público</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>
@@ -1370,6 +1403,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Convocatoria de Empleo Público</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>
@@ -1456,6 +1494,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Convocatoria de Empleo Público</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>
@@ -1512,6 +1555,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Convocatoria de Empleo Público</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>
@@ -1575,6 +1623,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#PlazaPorTurno"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno">Plaza por turno</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>
@@ -1631,6 +1684,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Convocatoria de Empleo Público</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>
@@ -1649,7 +1707,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos</p>
       <div class="comment">
-         <span class="markdown">Requisitos</span>
+         <span class="markdown">Requisitos para la oferta de empelo público</span>
       </div>
       <div class="description">
          <dl>
@@ -1775,6 +1833,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>dominio</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Convocatoria de Empleo Público</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
             <dd/>
             <dt>rango</dt>
             <dd>

@@ -711,11 +711,11 @@ The ontology has been implemented in the context of the project Open, collaborat
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">Deadline status</rdfs:comment>
-        <rdfs:comment xml:lang="es">Estado del plazo</rdfs:comment>
+        <rdfs:comment xml:lang="es">Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Status of the deadline for the submission of applications for the call for public employment.</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="es">Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público.</rdfs:label>
-        <rdfs:label xml:lang="en">Status of the deadline for the submission of applications for the call for public employment.</rdfs:label>
+        <rdfs:label xml:lang="en">Deadline status</rdfs:label>
+        <rdfs:label xml:lang="es">Estado del plazo</rdfs:label>
     </owl:DatatypeProperty>
     
 

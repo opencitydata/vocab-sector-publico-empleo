@@ -849,21 +849,21 @@
   "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Deadline status"
-  }, {
-    "@language" : "es",
-    "@value" : "Estado del plazo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
     "@value" : "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público."
   }, {
     "@language" : "en",
     "@value" : "Status of the deadline for the submission of applications for the call for public employment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Deadline status"
+  }, {
+    "@language" : "es",
+    "@value" : "Estado del plazo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"

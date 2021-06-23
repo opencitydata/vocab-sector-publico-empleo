@@ -9,7 +9,7 @@
   <li>Vacancies convened by shift</li>
   <li>Profesional Group</li>
   <li>Type of Personnel</li>
-  <li>Body/scale</li>
+  <li>Scale</li>
   <li>Mode</li>
   <li>Bases</li>
   <li>Provisionss</li>
@@ -98,7 +98,7 @@ dct:title &quot;Comunidad de Madrid&quot;^^xsd:string .
       <li>The number of job vacancies per shift is established with <code>esempleo:PlazaPorTurno</code> through the property <code>esempleo:plazasPorTurno</code>.</li>
       <li>The professional group is known through the property <code>esempleo:grupoProfesional</code> that establishes the relationship with the taxonomy <code>grupo-profesional</code>.</li>
       <li>The type of public employeer is know through the property <code>esempleo:empleadoPublico</code> that establishes the relationship with the taxonomy <code>empleado-publico</code>.</li>
-      <li>The type of body or scale is established through the property <code>esempleo:cuerpo</code> with the taxonomy <code>cuerpo</code>.</li>
+      <li>The type of scale and sub-scale is established through the property <code>esempleo:escala</code> with the taxonomy <code>escala</code>.</li>
       <li>The mode is known through the property <code>esempleo:modalidad</code> with the taxonomy <code>modalidad</code>.</li>
     </ul>
 
@@ -135,13 +135,17 @@ dct:title &quot;Comunidad de Madrid&quot;^^xsd:string .
     &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional/A1&gt; ;
     esempleo:empleadoPublico
     &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico/funcionario&gt; ;
-    esempleo:cuerpo
-    &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo/AG&gt; ;
+    esempleo:escala
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala/ag-tecnica&gt; ;
     esempleo:modalidad
 &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad/oposicion&gt; .
 </code>
 </pre>
-
+<p>For the Scale SKOS, it should be noted that the scales and sub-scales are defined in then Royal Legislative Decree 781/1986. However, a city council can also establish scales, subscales and classes. For example, a "Policía Local" Class is defined by a city council within the "Administración Especial" Scale and the "Servicios Especiales" Subscale. The city council then defines its own Scale SKOS with the new Class and links it to the general Scale SKOS as illustrated below:</p><pre>
+ &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala/zaragoza/policia-local&gt;  
+    &lt;http://www.w3.org/2004/02/skos/core#broadMatch&gt; 
+    &lt;http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala/ae-servicios-especiales&gt;.
+</pre>
     <h4>3.1.4 Official Gazette, <b>schema</b> pattern and <b>eli</b><span class="backlink" > back to <a href="#toc">index</a></span></h4>
 <p>As well as what has been done in the vocabulary of <a href="http://vocab.ciudadesabiertas.es/def/sector-publico/convenios/">Agreements</a> it has been determined that <code>esempleo:BoletinOficial</code> is a subClass Of <code>schema:DigitalDocument</code> which is itself a subClass Of  <code>schema:CreativeWork</code>.</p>
 <p>In addition, it has been decided to use the <strong>eli</strong> vocabulary for the identification of the Official Gazette resource.</p>

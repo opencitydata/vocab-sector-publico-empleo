@@ -725,6 +725,7 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Number of vacancies</rdfs:comment>
         <rdfs:comment xml:lang="es">Número de plazas convocadas</rdfs:comment>
@@ -749,20 +750,6 @@
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:comment xml:lang="es">Número de plazas totales de la convocatoria de empleo público.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Total number of places in the public employment call.</rdfs:comment>
-        <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en">Number of places</rdfs:label>
-        <rdfs:label xml:lang="es">Número de plazas</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno">
@@ -773,6 +760,19 @@
         <rdfs:domain></rdfs:domain>
         <rdfs:label xml:lang="en">Places per shift</rdfs:label>
         <rdfs:label xml:lang="es">Plazas por turno</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Descricipción de los plazo de apertura de la convocatoria de empleo público.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Description of the deadlines for the public employment call</rdfs:comment>
+        <rdfs:label xml:lang="en">deadlines</rdfs:label>
+        <rdfs:label xml:lang="es">plazos</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1086,11 +1086,11 @@
     <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
         <rdfs:comment xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</rdfs:comment>
-        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
+        <rdfs:comment xml:lang="es">La práctica recomendada es describir la fecha, fecha/hora o periodo de tiempo como se expresa en la propiedad date, de la cual es una subpropiedad.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
         <rdfs:label xml:lang="es">Fecha de emisión</rdfs:label>
-        <rdfs:comment xml:lang="es">La práctica recomendada es describir la fecha, fecha/hora o periodo de tiempo como se expresa en la propiedad date, de la cual es una subpropiedad.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/</rdfs:isDefinedBy>
     </rdf:Description>
     <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala">

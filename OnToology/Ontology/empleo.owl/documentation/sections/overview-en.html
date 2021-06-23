@@ -1,8 +1,8 @@
-<h2 id="overv" class="list">Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="overv" class="list">Vocabulary for the representation of data on public employment offer.: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
-<ul class="hlist">
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#http://dbpedia.org/ontology/AdministrativeRegion"
          title="http://dbpedia.org/ontology/AdministrativeRegion">Administrative Region</a>
@@ -62,7 +62,7 @@ This ontology has the following classes and properties.</span>
       <a href="#PlazaPorTurno"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#PlazaPorTurno">Workplace per shift</a>
    </li>
-</ul><h4>Object Properties</h4><ul class="hlist">
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia"
          title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia">belongs to the autonomous area</a>
@@ -74,10 +74,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia"
          title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#provincia">belongs to the province</a>
-   </li>
-   <li>
-      <a href="#cuerpo"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo">Body or scale</a>
    </li>
    <li>
       <a href="#sePublica"
@@ -111,12 +107,22 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP">Public job vacancies from PEO</a>
    </li>
    <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala">
+         <span>scale</span>
+      </a>
+   </li>
+   <li>
       <a href="#turnoPlaza"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#turnoPlaza">Shift of the job vacancy</a>
    </li>
-</ul><h4>Data Properties</h4><ul class="hlist">
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#http://schema.org/abstract" title="http://schema.org/abstract">Abstract</a>
+   </li>
+   <li>
+      <a href="#convocatoriaURL"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#convocatoriaURL">call URL</a>
    </li>
    <li>
       <a href="#observaciones"
@@ -135,10 +141,14 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion">Date of Decision</a>
    </li>
    <li>
-      <a href="#http://schema.org/dateModified" title="http://schema.org/dateModified">Date of modification</a>
+      <a href="#http://schema.org/dateModified" title="http://schema.org/dateModified">date of modification</a>
    </li>
    <li>
-      <a href="#http://schema.org/datePublished" title="http://schema.org/datePublished">Date of publication</a>
+      <a href="#http://schema.org/datePublished" title="http://schema.org/datePublished">date of publipublished dateosted incidence date</a>
+   </li>
+   <li>
+      <a href="#plazos"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos">deadlines</a>
    </li>
    <li>
       <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">Description</a>
@@ -161,11 +171,7 @@ This ontology has the following classes and properties.</span>
       <a href="#http://schema.org/name" title="http://schema.org/name">Name</a>
    </li>
    <li>
-      <a href="#http://schema.org/alternateName" title="http://schema.org/alternateName">Alternative Name</a>
-   </li>
-   <li>
-      <a href="#plazas"
-         title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas">Number of places</a>
+      <a href="#http://schema.org/alternateName" title="http://schema.org/alternateName">Nombre alternativo</a>
    </li>
    <li>
       <a href="#plazasPorTurno"
@@ -191,6 +197,10 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL">Rules URL</a>
    </li>
    <li>
+      <a href="#especialidad"
+         title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#especialidad">specialty</a>
+   </li>
+   <li>
       <a href="#estadoPlazo"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo">Status of the deadline for the submission of applications for the call for public employment.</a>
    </li>
@@ -201,7 +211,7 @@ This ontology has the following classes and properties.</span>
       <a href="#numeroPlazasConvocadas"
          title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas">Vacancies</a>
    </li>
-</ul><h4>Named Individuals</h4><ul class="hlist">
+</ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo"
          title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo">Body or scale</a>
@@ -221,5 +231,11 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico"
          title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico">Public Employee</a>
+   </li>
+   <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala">
+         <span>scale</span>
+      </a>
    </li>
 </ul>

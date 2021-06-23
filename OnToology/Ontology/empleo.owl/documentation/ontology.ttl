@@ -525,6 +525,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas
 :numeroPlazasConvocadas rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :ConvocatoriaEmpleoPublico ;
                         rdfs:range xsd:integer ;
                         rdfs:comment "Number of vacancies"@en ,
                                      "Número de plazas convocadas"@es ;
@@ -542,17 +543,6 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:domain "" ;
                rdfs:label "Comments"@en ,
                           "Observaciones"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas
-:plazas rdf:type owl:DatatypeProperty ;
-        rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:range xsd:integer ;
-        rdfs:comment "Número de plazas totales de la convocatoria de empleo público."@es ,
-                     "Total number of places in the public employment call."@en ;
-        rdfs:domain "" ;
-        rdfs:label "Number of places"@en ,
-                   "Número de plazas"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno

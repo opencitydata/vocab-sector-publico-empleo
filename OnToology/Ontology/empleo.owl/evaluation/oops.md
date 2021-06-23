@@ -19,18 +19,8 @@ It is obvious that not all the pitfalls are equally important; their impact in t
 
 
 
-#### P13. Inverse relationships not explicitly declared <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (13 cases detected).
-*This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.*
-
-    
-
-#### P22. Using different naming conventions in the ontology <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (1 cases detected).
-*The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &quot;-&quot; or &quot;_&quot;) . Some notions about naming conventions are provided in [2].*
-
-    
-
-#### P04. Creating unconnected ontology elements <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (2 cases detected).
-*Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.*
+#### P19. Defining multiple domains or ranges in properties <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/critical.png" height="15px"> (1 cases detected).
+*The domain or range (or both) of a property (relationships and attributes) is defined by stating more than one rdfs:domain or rdfs:range statements. In OWL multiple rdfs:domain or rdfs:range axioms are allowed, but they are interpreted as conjunction, being, therefore, equivalent to the construct owl:intersectionOf. This pitfall is related to the common error that appears when defining domains and ranges described in [7].*
 
     
 
@@ -41,6 +31,21 @@ It is obvious that not all the pitfalls are equally important; their impact in t
 
 #### P20. Misusing ontology annotations <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (4 cases detected).
 *The contents of some annotation properties are swapped or misused. This pitfall might affect annotation properties related to natural language information (for example, annotations for naming such as rdfs:label or for providing descriptions such as rdfs:comment). Other types of annotation could also be affected as temporal, versioning information, among others.*
+
+    
+
+#### P13. Inverse relationships not explicitly declared <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (13 cases detected).
+*This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.*
+
+    
+
+#### P04. Creating unconnected ontology elements <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (2 cases detected).
+*Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.*
+
+    
+
+#### P22. Using different naming conventions in the ontology <img src="https://raw.githubusercontent.com/OnToology/oops-report/master/sample/minor.png" height="15px"> (1 cases detected).
+*The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as &quot;-&quot; or &quot;_&quot;) . Some notions about naming conventions are provided in [2].*
 
     
 

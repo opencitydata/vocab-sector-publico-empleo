@@ -542,6 +542,15 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#label> "Places per shift"@en .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/2000/01/rdf-schema#label> "Plazas por turno"@es .
 # 
+# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos> <http://www.w3.org/2000/01/rdf-schema#comment> "Descricipción de los plazo de apertura de la convocatoria de empleo público."@es .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the deadlines for the public employment call"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos> <http://www.w3.org/2000/01/rdf-schema#label> "deadlines"@en .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos> <http://www.w3.org/2000/01/rdf-schema#label> "plazos"@es .
+# 
 # http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .

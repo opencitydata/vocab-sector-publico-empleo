@@ -566,6 +566,16 @@ xsd:date rdf:type rdfs:Datatype .
                            "Plazas por turno"@es .
 
 
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos
+:plazos rdf:type owl:DatatypeProperty ;
+        rdfs:domain :ConvocatoriaEmpleoPublico ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Descricipción de los plazo de apertura de la convocatoria de empleo público."@es ,
+                     "Description of the deadlines for the public employment call"@en ;
+        rdfs:label "deadlines"@en ,
+                   "plazos"@es .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas
 :pruebas rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;

@@ -112,6 +112,10 @@
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
+    "plazos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "bases" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"

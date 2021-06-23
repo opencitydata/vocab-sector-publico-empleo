@@ -1085,9 +1085,9 @@
 
     <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <rdfs:comment xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</rdfs:comment>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
         <rdfs:label xml:lang="es">Fecha de emisión</rdfs:label>
         <rdfs:comment xml:lang="es">La práctica recomendada es describir la fecha, fecha/hora o periodo de tiempo como se expresa en la propiedad date, de la cual es una subpropiedad.</rdfs:comment>
@@ -1104,6 +1104,8 @@ Las clases son creadas por cada ayuntamiento.</rdfs:comment>
 Each scale can be divided into subscales and each subscale in turn can be subdivided into classes.
 The scales and subscales are regulated according to Royal Legislative Decree 781/1986, of April 18.
 Classes are created by each city council.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Each scale corresponds to certain professional groups. Thus, for example, for the civil servants of the General Administration Scale, the jobs will have to be carried out by technical (group A1), management (A2), administrative (C1) or auxiliary (C2) General Administration officials.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Cada escala se corresponde con determinados grupos profesionales. Así se tiene por ejemplo que para los funcionarios de la Escala de Administración General  los puestos de trabajo  habrán de ser desempeñados por funcionarios técnicos (grupo A1), de gestión (A2), administrativos (C1) o auxiliares (C2) de Administración General.</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 

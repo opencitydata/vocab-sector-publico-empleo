@@ -458,7 +458,9 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico">Public employee</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#plazasOEP"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasOEP">Public job vacancies from PEO</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#convocatoriaURL"
+            <sup class="type-op" title="object property">op</sup>, <a href="#numeroPlazasConvocadas"
+               title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas">Vacancies</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#convocatoriaURL"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#convocatoriaURL">call URL</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#plazos"
                title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos">deadlines</a>
@@ -1033,10 +1035,6 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://schema.org/alternateName" title="http://schema.org/alternateName">Nombre alternativo</a>
       </li>
       <li>
-         <a href="#plazas"
-            title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas">Number of places</a>
-      </li>
-      <li>
          <a href="#plazasPorTurno"
             title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno">Places per shift</a>
       </li>
@@ -1525,35 +1523,6 @@ This section provides details for each class and property defined by Vocabulary 
          </dl>
       </div>
    </div>
-   <div class="entity" id="plazas">
-      <h3>Number of places<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas</p>
-      <div class="comment">
-         <span class="markdown">Total number of places in the public employment call.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="http://www.w3.org/2002/07/owl#topDataProperty"
-                  target="_blank"
-                  title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
-            </dd>
-            <dt>has domain</dt>
-            <dd/>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="plazasPorTurno">
       <h3>Places per shift<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1828,6 +1797,11 @@ This section provides details for each class and property defined by Vocabulary 
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>has domain</dt>
+            <dd>
+               <a href="#ConvocatoriaEmpleoPublico"
+                  title="http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico">Public Employment Call</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dd/>
             <dt>has range</dt>
             <dd>

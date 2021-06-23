@@ -505,6 +505,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of vacancies"@en .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de plazas convocadas"@es .
@@ -521,16 +522,6 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#label> "Comments"@en .
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones> <http://www.w3.org/2000/01/rdf-schema#label> "Observaciones"@es .
-# 
-# http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de plazas totales de la convocatoria de empleo público."@es .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#comment> "Total number of places in the public employment call."@en .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#label> "Number of places"@en .
-<http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas> <http://www.w3.org/2000/01/rdf-schema#label> "Número de plazas"@es .
 # 
 # http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

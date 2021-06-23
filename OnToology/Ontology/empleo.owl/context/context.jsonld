@@ -94,10 +94,6 @@
     "AdministrativeRegion" : {
       "@id" : "http://dbpedia.org/ontology/AdministrativeRegion"
     },
-    "plazas" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas",
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
-    },
     "basesURL" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"

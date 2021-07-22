@@ -850,10 +850,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público."
+    "@value" : "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público. Puede tomar los valores \"abierto\", \"cerrado\", \"pendiente\", etc."
   }, {
     "@language" : "en",
-    "@value" : "Status of the deadline for the submission of applications for the call for public employment."
+    "@value" : "Status of the deadline for the submission of applications for the call for public employment. Can have values \"open\", \"closed\", \"pending\", etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@value" : ""
@@ -866,7 +866,7 @@
     "@value" : "Estado del plazo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"

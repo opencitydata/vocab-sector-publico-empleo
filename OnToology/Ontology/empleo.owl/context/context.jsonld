@@ -49,7 +49,7 @@
     },
     "estadoPlazo" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo",
-      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "requisitos" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos",

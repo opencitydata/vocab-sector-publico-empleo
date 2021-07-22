@@ -477,9 +477,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo
 :estadoPlazo rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:range xsd:boolean ;
-             rdfs:comment "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público."@es ,
-                          "Status of the deadline for the submission of applications for the call for public employment."@en ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público. Puede tomar los valores \"abierto\", \"cerrado\", \"pendiente\", etc."@es ,
+                          "Status of the deadline for the submission of applications for the call for public employment. Can have values \"open\", \"closed\", \"pending\", etc."@en ;
              rdfs:domain "" ;
              rdfs:label "Deadline status"@en ,
                         "Estado del plazo"@es .

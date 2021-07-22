@@ -1029,16 +1029,6 @@ The ontology has been implemented in the context of the project Open, collaborat
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo -->
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <rdfs:label xml:lang="en">Body or scale</rdfs:label>
-        <rdfs:label xml:lang="es">Cuerpo o escala</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico -->
 
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico">
@@ -1100,9 +1090,9 @@ The ontology has been implemented in the context of the project Open, collaborat
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <rdfs:comment xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</rdfs:comment>
+        <rdfs:label xml:lang="es">Fecha de emisión</rdfs:label>
         <rdfs:comment xml:lang="es">La práctica recomendada es describir la fecha, fecha/hora o periodo de tiempo como se expresa en la propiedad date, de la cual es una subpropiedad.</rdfs:comment>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
-        <rdfs:label xml:lang="es">Fecha de emisión</rdfs:label>
         <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/</rdfs:isDefinedBy>
     </rdf:Description>
     <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala">

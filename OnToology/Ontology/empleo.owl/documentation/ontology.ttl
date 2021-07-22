@@ -750,13 +750,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> rdf:type owl:NamedIndividual ,
-                                                                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                                                                            rdfs:label "Body or scale"@en ,
-                                                                                       "Cuerpo o escala"@es .
-
-
 ###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> rdf:type owl:NamedIndividual ,
                                                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;

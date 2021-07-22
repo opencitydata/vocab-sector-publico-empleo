@@ -1105,17 +1105,6 @@ The ontology has been implemented in the context of the project Open, collaborat
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo -->
-
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <rdfs:label xml:lang="en">Body or scale</rdfs:label>
-        <rdfs:label xml:lang="es">Cuerpo o escala</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico -->
 
 

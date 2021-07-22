@@ -7,11 +7,11 @@
 @base <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> .
 
 <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo> rdf:type owl:Ontology ;
-                                                              owl:versionIRI <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo/1.0.0> ;
+                                                              owl:versionIRI <http://vocab.ciudadesabiertas.es/def/sector-publico/empleo/1.1.0> ;
                                                               <http://purl.org/dc/elements/1.1/abstract> """Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.
-	El vocabulario de Empleo trabaja sobre la base del buscador de convocatorias de empleo público del portal de la administración general https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm"""@es ,
+	El vocabulario de Empleo trabaja sobre la base del buscador de convocatorias de empleo público del portal de la administración general https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm""" ,
                                                                                                          """This vocabulary has been developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Business launched through the Public Business Entity Red.es assigned to the State Secretariat for Digital Advancement of that ministry.
-	The Employment vocabulary works on the basis of the search engine for public employment calls of the general administration portal https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm."""@en ;
+	The Employment vocabulary works on the basis of the search engine for public employment calls of the general administration portal https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm.""" ;
                                                               <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
                                                                                                             "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
                                                                                                             "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
@@ -24,15 +24,15 @@
                                                               <http://purl.org/dc/elements/1.1/creator> "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                         "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                         "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ;
-                                                              <http://purl.org/dc/elements/1.1/description> "Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio."@es ,
-                                                                                                            "This vocabulary is being developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry."@en ;
+                                                              <http://purl.org/dc/elements/1.1/description> "Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio." ,
+                                                                                                            "This vocabulary is being developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry." ;
                                                               <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo"@es ;
                                                               <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
                                                               <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre la oferta pública de empleo"@es ,
                                                                                                       "Vocabulary for the representation of data on public employment offer."@en ;
-                                                              <http://purl.org/dc/terms/created> "2020-10-14"^^xsd:dateTime ;
-                                                              <http://purl.org/dc/terms/hasVersion> "1.0.0" ;
-                                                              <http://purl.org/dc/terms/issued> "2020-11-03"^^xsd:dateTime ;
+                                                              <http://purl.org/dc/terms/created> "2020-10-14T00:00:00"^^xsd:dateTime ;
+                                                              <http://purl.org/dc/terms/hasVersion> "1.1.0" ;
+                                                              <http://purl.org/dc/terms/issued> "2020-06-23T00:00:00"^^xsd:dateTime ;
                                                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
                                                               <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@en ,
                                                                                                    "Ontology Engineering Group - Universidad Politécnica de Madrid"@es ;
@@ -40,8 +40,11 @@
                                                               <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#> ;
                                                               rdfs:comment "Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio."@es ,
                                                                            "This vocabulary has been developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry."@en ;
-                                                              owl:versionInfo "This is the initial version of the Employment ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate."@en ,
-                                                                              "Versión 1.0 de la ontología de Empleo que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."@es .
+                                                              owl:priorVersion "1.0.1"@en ;
+                                                              owl:versionInfo """Esta es la versión 1.1 de la ontología de Empleo que resulta de modificaciones a la versión 1.0 relativa a la inclusión de propiedades adicionales requeridas por los ayuntamientos tanto en la oferta de empleo público como de la convocatoria de empleo público. 
+La ontología ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."""@es ,
+                                                                              """This is version 1.1 of the Employment ontology that results from modifications to version 1.0 regarding the inclusion of additional properties required by municipalities in both the public employment offer and the public employment call.
+The ontology has been implemented in the context of the project Open, collaborative and interoperable government platform in which the municipalities of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate."""@en .
 
 #################################################################
 #    Annotation properties
@@ -132,24 +135,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
-
-###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo
-:cuerpo rdf:type owl:ObjectProperty ;
-        rdfs:subPropertyOf owl:topObjectProperty ;
-        rdfs:domain :ConvocatoriaEmpleoPublico ;
-        rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                            owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo>
-                                          ]
-                                        ) ;
-                     rdf:type owl:Class
-                   ] ;
-        rdfs:comment "Cuerpo o escala de la administración pública: general, especial, general o especial, habilitado de carácter nacional, general o habilitado de carácter nacional"@es ,
-                     "Public administration body or scale: general, special, general or special, nationally qualified, general or nationally qualified"@en ;
-        rdfs:label "Body or scale"@en ,
-                   "Cuerpo o escala"@es .
-
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#empleadoPublico
 :empleadoPublico rdf:type owl:ObjectProperty ;
@@ -294,6 +279,20 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                               "pertenece a la provincia"@es .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                            rdfs:domain :ConvocatoriaEmpleoPublico ;
+                                                                            rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                                                owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala>
+                                                                                                              ]
+                                                                                                            ) ;
+                                                                                         rdf:type owl:Class
+                                                                                       ] .
+
+
 ###  http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf owl:topObjectProperty ;
@@ -395,7 +394,7 @@ xsd:date rdf:type rdfs:Datatype .
                                   rdfs:comment "La fecha y hora de publicación en formato ISO 8601"@es ,
                                                "The date and time of publication in ISO 8601 date format"@en ;
                                   rdfs:isDefinedBy <http://schema.org/> ;
-                                  rdfs:label "date of publipublished dateosted incidence date"@en ,
+                                  rdfs:label "date published"@en ,
                                              "fecha de publicación"@es .
 
 
@@ -422,6 +421,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases
 :bases rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :ConvocatoriaEmpleoPublico ;
        rdfs:range xsd:string ;
        rdfs:comment "Bases de la convocatoria de empleo público"@es ,
                     "Rules of the call for public employment"@en ;
@@ -433,6 +433,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL
 :basesURL rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :ConvocatoriaEmpleoPublico ;
           rdfs:range xsd:anyURI ;
           rdfs:comment "URL de las bases de la convocatoria de empleo público"@es ,
                        "URL of the rules of the call for public employment."@en ;
@@ -441,42 +442,63 @@ xsd:date rdf:type rdfs:Datatype .
                      "URL de las bases"@es .
 
 
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#convocatoriaURL
+:convocatoriaURL rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ConvocatoriaEmpleoPublico ;
+                 rdfs:range xsd:anyURI ;
+                 rdfs:comment "URL de la convocatoria de empleo público"@es ,
+                              "URL of the public employment call"@en ;
+                 rdfs:label "URL convocatoria"@es ,
+                            "call URL"@en .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#disposiciones
 :disposiciones rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :ConvocatoriaEmpleoPublico ;
                rdfs:range xsd:string ;
-               rdfs:comment "Disposiciones legales"@es ,
-                            "Legal provisions"@en ;
+               rdfs:comment "Disposiciones legales de una convocatoria de empleo público."@es ,
+                            "Legal provisions of a public call for employment."@en ;
                rdfs:domain "" ;
-               rdfs:label "Disposiciones legales de una convocatoria de empleo público."@es ,
-                          "Legal provisions of a public call for employment."@en .
+               rdfs:label "Disposiciones legales"@es ,
+                          "Legal provisions"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#especialidad
+:especialidad rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ConvocatoriaEmpleoPublico ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Especialidad de la convocatoria, por ejemplo \"Industrial/Obras públicas\""@es ,
+                           "Public employment call specialty, for example \"Industrial/Public Works\""@en ;
+              rdfs:label "especialidad"@es ,
+                         "specialty"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#estadoPlazo
 :estadoPlazo rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:range xsd:boolean ;
-             rdfs:comment "Deadline status"@en ,
-                          "Estado del plazo"@es ;
+             rdfs:comment "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público."@es ,
+                          "Status of the deadline for the submission of applications for the call for public employment."@en ;
              rdfs:domain "" ;
-             rdfs:label "Estado del Plazo de presentación de solicitudes para la convocatoria de empleo público."@es ,
-                        "Status of the deadline for the submission of applications for the call for public employment."@en .
+             rdfs:label "Deadline status"@en ,
+                        "Estado del plazo"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaAprobacion
 :fechaAprobacion rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
-                 rdfs:domain _:genid2147483671 ;
                  rdfs:range xsd:date ;
-                 rdfs:comment "Date of Approval"@en ,
-                              "Fecha de aprobación"@es ;
-                 rdfs:label "Date of Approval of the Call or the Offer of public employment."@en ,
-                            "Fecha de aprobación de la convocatoria o de la oferta de empleo público"@es .
+                 rdfs:comment "Date of Approval of the Call or the Offer of public employment."@en ,
+                              "Fecha de aprobación de la convocatoria o de la oferta de empleo público"@es ;
+                 rdfs:label "Date of Approval"@en ,
+                            "Fecha de aprobación"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#fechaResolucion
 :fechaResolucion rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :ConvocatoriaEmpleoPublico ;
                  rdfs:range xsd:date ;
                  rdfs:comment "Date of resolution of the call"@en ,
                               "Fecha de resolución de la convocatoria"@es ;
@@ -488,6 +510,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion
 :formularioInscripcion rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain :ConvocatoriaEmpleoPublico ;
                        rdfs:range xsd:anyURI ;
                        rdfs:comment "Registration Form URL for the call for public employment."@en ,
                                     "URL del formulario de inscripción a la convocatoria de empleo público."@es ;
@@ -499,6 +522,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#listaEsperaExtraordinaria
 :listaEsperaExtraordinaria rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:domain :ConvocatoriaEmpleoPublico ;
                            rdfs:range xsd:boolean ;
                            rdfs:comment "Call for an extraordinary waiting list"@en ,
                                         "Convocatoria para una lista de espera extraordinaria"@es ;
@@ -510,6 +534,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#numeroPlazasConvocadas
 :numeroPlazasConvocadas rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :ConvocatoriaEmpleoPublico ;
                         rdfs:range xsd:integer ;
                         rdfs:comment "Number of vacancies"@en ,
                                      "Número de plazas convocadas"@es ;
@@ -521,6 +546,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#observaciones
 :observaciones rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :ConvocatoriaEmpleoPublico ;
                rdfs:range xsd:string ;
                rdfs:comment "Comments on the public employment call."@en ,
                             "Observaciones a la convocatoria de empleo público"@es ;
@@ -529,20 +555,10 @@ xsd:date rdf:type rdfs:Datatype .
                           "Observaciones"@es .
 
 
-###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas
-:plazas rdf:type owl:DatatypeProperty ;
-        rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:range xsd:integer ;
-        rdfs:comment "Número de plazas totales de la convocatoria de empleo público."@es ,
-                     "Total number of places in the public employment call."@en ;
-        rdfs:domain "" ;
-        rdfs:label "Number of places"@en ,
-                   "Número de plazas"@es .
-
-
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno
 :plazasPorTurno rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :PlazaPorTurno ;
                 rdfs:range xsd:integer ;
                 rdfs:comment "Number of places for a certain shift in the public employment call."@en ,
                              "Número de plazas para un turno determinado de la convocatoria de empleo público."@es ;
@@ -551,9 +567,20 @@ xsd:date rdf:type rdfs:Datatype .
                            "Plazas por turno"@es .
 
 
+###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos
+:plazos rdf:type owl:DatatypeProperty ;
+        rdfs:domain :ConvocatoriaEmpleoPublico ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Descricipción de los plazo de apertura de la convocatoria de empleo público."@es ,
+                     "Description of the deadlines for the public employment call"@en ;
+        rdfs:label "deadlines"@en ,
+                   "plazos"@es .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#pruebas
 :pruebas rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :ConvocatoriaEmpleoPublico ;
          rdfs:range xsd:string ;
          rdfs:comment "Pruebas selectivas para la convocatoria de empleo público."@es ,
                       "Selective tests for the call for public employment."@en ;
@@ -566,8 +593,8 @@ xsd:date rdf:type rdfs:Datatype .
 :requisitos rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:range xsd:string ;
-            rdfs:comment "Requirements"@en ,
-                         "Requisitos"@es ;
+            rdfs:comment "Requirements for the public employment call"@en ,
+                         "Requisitos para la oferta de empelo público"@es ;
             rdfs:domain "" ;
             rdfs:label "Requirements of the "@en ,
                        "Requisitos"@es .
@@ -576,10 +603,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
-
-###  _:genid2147483671
-_:genid2147483671 rdf:type owl:Class .
-
 
 ###  http://dbpedia.org/ontology/AdministrativeRegion
 <http://dbpedia.org/ontology/AdministrativeRegion> rdf:type owl:Class ;
@@ -741,6 +764,11 @@ _:genid2147483671 rdf:type owl:Class .
                                                                                                  "Public Employee"@en .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional> rdf:type owl:NamedIndividual ,
                                                                                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
@@ -774,6 +802,20 @@ _:genid2147483671 rdf:type owl:Class .
                                                    "http://purl.org/dc/terms/"@en ;
                                   rdfs:label "Date Issued"@en ,
                                              "Fecha de emisión"@es .
+
+
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala> rdfs:comment "Cada escala se corresponde con determinados grupos profesionales. Así se tiene por ejemplo que para los funcionarios de la Escala de Administración General  los puestos de trabajo  habrán de ser desempeñados por funcionarios técnicos (grupo A1), de gestión (A2), administrativos (C1) o auxiliares (C2) de Administración General."@es ,
+                                                                                         "Each scale corresponds to certain professional groups. Thus, for example, for the civil servants of the General Administration Scale, the jobs will have to be carried out by technical (group A1), management (A2), administrative (C1) or auxiliary (C2) General Administration officials."@en ,
+                                                                                         """Escala de la administración pública: Habilitación estatal, Administración General, Administración Especial. 
+Cada escala puede divir en subescalas y cada subescala a su vez puede subvididirse en clases.
+Las escalas y subescalas están normadas según el Real Decreto Legislativo 781/1986, de 18 de abril.
+Las clases son creadas por cada ayuntamiento."""@es ,
+                                                                                         """Public administration scale: State Qualification, General Administration, Special Administration.
+Each scale can be divided into subscales and each subscale in turn can be subdivided into classes.
+The scales and subscales are regulated according to Royal Legislative Decree 781/1986, of April 18.
+Classes are created by each city council."""@en ;
+                                                                            rdfs:label "escala"@es ,
+                                                                                       "scale"@en .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

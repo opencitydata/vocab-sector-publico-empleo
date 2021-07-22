@@ -28,6 +28,10 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#grupoProfesional",
       "@type" : "@id"
     },
+    "escala" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/escala",
+      "@type" : "@id"
+    },
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -50,6 +54,9 @@
     "requisitos" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#requisitos",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
     },
     "autonomia" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#autonomia",
@@ -90,10 +97,6 @@
     "AdministrativeRegion" : {
       "@id" : "http://dbpedia.org/ontology/AdministrativeRegion"
     },
-    "plazas" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazas",
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
-    },
     "basesURL" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#basesURL",
       "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -107,6 +110,10 @@
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "plazos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "bases" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#bases",
@@ -174,6 +181,10 @@
       "@id" : "http://purl.org/dc/terms/title",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
+    "plazasPorTurno" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#plazasPorTurno",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
     "publisher" : {
       "@id" : "http://purl.org/dc/terms/publisher"
     },
@@ -206,15 +217,15 @@
     "date" : {
       "@id" : "http://purl.org/dc/elements/1.1/date"
     },
-    "cuerpo" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#cuerpo",
-      "@type" : "@id"
-    },
     "OfertaEmpleoPublico" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "especialidad" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#especialidad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "contributor" : {
       "@id" : "http://purl.org/dc/elements/1.1/contributor"
@@ -241,6 +252,10 @@
     },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "convocatoriaURL" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#convocatoriaURL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "formularioInscripcion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#formularioInscripcion",

@@ -1468,16 +1468,6 @@
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Body or scale"
-  }, {
-    "@language" : "es",
-    "@value" : "Cuerpo o escala"
-  } ]
-}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {

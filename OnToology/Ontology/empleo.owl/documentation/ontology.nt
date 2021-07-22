@@ -713,12 +713,6 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> <http://www.w3.org/2000/01/rdf-schema#label> "Body or scale"@en .
-<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo> <http://www.w3.org/2000/01/rdf-schema#label> "Cuerpo o escala"@es .
-# 
 # http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
